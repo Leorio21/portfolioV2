@@ -1,0 +1,11 @@
+.container {
+  color: var(--test--theme);
+  font-size: 3rem;
+}
+
+.button {
+  height: 3rem;
+  width: 5rem;
+  background-color: green;
+  color: white;
+}

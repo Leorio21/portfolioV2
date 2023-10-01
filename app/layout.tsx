@@ -29,7 +29,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr">
-      <body className={`${inter.variable} ${lugrasimo.variable}`} id="test">
+      <body className={`${inter.variable} ${lugrasimo.variable}`}>
         {children}
       </body>
     </html>
