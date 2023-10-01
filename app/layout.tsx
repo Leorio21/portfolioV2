@@ -1,9 +1,18 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Lugrasimo } from "next/font/google";
 
 const inter = Inter({
   subsets: ["latin"],
+  variable: "--font--inter",
+  fallback: ["Arail", "sans serif"],
+  adjustFontFallback: false,
+});
+
+const lugrasimo = Lugrasimo({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font--lugrasimo",
   fallback: ["Arail", "sans serif"],
   adjustFontFallback: false,
 });
@@ -20,7 +29,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr">
-      <body className={inter.className} id="test">
+      <body className={`${inter.variable} ${lugrasimo.variable}`} id="test">
         {children}
       </body>
     </html>
