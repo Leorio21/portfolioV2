@@ -1,0 +1,72 @@
+.success {
+  --notify--text--color: #FFFFFF;
+  --notify--bg--color: #00ac00;
+  --notify--bg--color--hover: #007700;
+  --notify--border--color: #007700;
+  --notify--border--color--hover: #005515;
+}
+
+.warning {
+  --notify--text--color: #FFFFFF;
+  --notify--bg--color: #ee5f00;
+  --notify--bg--color--hover: #ac4500;
+  --notify--border--color: #ac4500;
+  --notify--border--color--hover: #642800;
+}
+
+.error {
+  --notify--text--color: #FFFFFF;
+  --notify--bg--color: #ac0000;
+  --notify--bg--color--hover: #770000;
+  --notify--border--color: #770000;
+  --notify--border--color--hover: #550000;
+}
+
+.container {
+  position: fixed;
+  top: -100px;
+  left: calc(50% - 15.5rem);
+  width: 32rem;
+  z-index: 99;
+  word-break: break-word;
+  padding: 1rem 3rem;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 1.5rem;
+  border: .2rem solid var(--notify--border--color);
+  color: var(--notify--text--color);
+  background-color: var(--notify--bg--color);
+}
+
+.container:hover {
+  border-color: var(--notify--border--color--hover);
+  background-color: var(--notify--bg--color--hover);
+}
+
+.anim {
+  animation: showNotify 0.5s both;
+}
+
+.closeButton {
+  position: absolute;
+  cursor: pointer;
+  top: .5rem;
+  right: .5rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+.closeButtonIcon {
+  fill: var(--notify--text--color);
+}
+
+@keyframes showNotify {
+  from {
+    top: -100px;
+  }
+  to {
+    top: 50px;
+  }
+}

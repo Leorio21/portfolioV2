@@ -1,0 +1,30 @@
+.red {
+  --button--text--color: white;
+  --button--text--color--hover: white;
+  --button--background--color: rgb(180, 0, 0);
+  --button--bg--color--hover: rgb(119, 0, 0);
+}
+
+.green {
+  --button--text--color: white;
+  --button--text--color--hover: black;
+  --button--background--color: green;
+  --button--bg--color--hover: rgb(0, 226, 0);
+}
+
+.button {
+  height: 5rem;
+  width: 40%;
+  background-color: var(--button--background--color);
+  color: var(--button--text--color);
+  font-size: 2rem;
+  border-radius: var(--border-radius);
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  
+}
+
+.button:hover {
+  background-color: var(--button--bg--color--hover);
+  color: var(--button--text--color--hover);
+}
