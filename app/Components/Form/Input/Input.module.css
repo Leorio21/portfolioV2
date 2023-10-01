@@ -2,18 +2,19 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  height: 8rem;
+  height: 8.6rem;
   width: 100%;
   position: relative;
   align-self: end;
 }
 
 .input {
-  height: 2.6rem;
+  height: 3rem;
   padding: .3rem 1rem;
   border-radius: var(--border-radius);
   color: var(--background--color);
   background-color: var(--text--color);
+  font-size: 1.5rem;
 }
 
 .label {

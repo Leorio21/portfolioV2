@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import { XMarkIcon } from "@heroicons/react/20/solid";
+import { AiOutlineClose } from "react-icons/ai"
 import style from "./Notify.module.css";
 
 interface NotifyProps {
@@ -31,13 +31,13 @@ const Notify = ({
 	}, [inContent])
 
 	return (
-		<div className={`${style.container} ${style[inTheme]}`} ref={notifyRef}>
-			{inContent}
-			<div onClick={onCloseHandle} className={style.closeButton}>
-				<XMarkIcon height={20} className={style.closeButtonIcon} />
-			</div>
-		</div>
-	);
+    <div className={`${style.container} ${style[inTheme]}`} ref={notifyRef}>
+      {inContent}
+      <div onClick={onCloseHandle} className={style.closeButton}>
+        <AiOutlineClose height={20} className={style.closeButtonIcon} />
+      </div>
+    </div>
+  );
 };
 
 export default Notify;

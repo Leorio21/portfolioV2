@@ -1,0 +1,35 @@
+.container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  align-items: center;
+  width: 7rem;
+  height: 3rem;
+  color: var(--background--color);
+  background-color: var(--text--color);
+  font-size: 2rem;
+  border-radius: 2.5rem;
+}
+
+.button {
+  position: absolute;
+  top: calc(50% - 1.25rem);
+  left: 0.8rem;
+  background-color: var(--text--color);
+  border: .2rem solid var(--background--color);
+  border-radius: 2.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  transition: all .3s ease-in-out;
+}
+
+.buttonLight {
+  left: calc(100% - 3.3rem);
+}
+
+.themeIcon {
+  width: 1.7rem;
+  height: auto;
+  fill: var(--background--color);
+}
