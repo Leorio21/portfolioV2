@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
-import styles from "./ToggleTheme.module.css";
 import { BsFillSunFill, BsFillMoonStarsFill } from "react-icons/bs";
+import styles from "./ToggleTheme.module.css";
 
 function ToggleTheme() {
   const [toggleTheme, setToggleTheme] = useState(false);
