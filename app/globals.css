@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
 
 :root, .light {
-  /* --bg--img--home: url("../public/fond_code_ligth.webp"); */
+  --bg--img--home: url("../public/fond_code_ligth.webp");
   --text--color: rgb(36, 36, 36);
   --background--color: rgb(221, 221, 221);
   --form-label--font: "Young Serif", "arial", "sans serif";
@@ -17,7 +17,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    /* --bg--img--home: url("../public/fond_code_dark.webp"); */
+    --bg--img--home: url("../public/fond_code_dark.webp");
     --text--color: rgb(221, 221, 221);
     --background--color: rgb(36, 36, 36);
     --test--theme: blue;
@@ -31,10 +31,13 @@
   color: var(--text--color);
 }
 
+html {
+  font-size: 62.5%; /* 1 rem = 10px */
+}
+
 html,
 body {
   max-width: 100dvw;
-  font-size: 62.5%; /* 1 rem = 10px */
   overflow-x: hidden;
   scroll-behavior: smooth;
   background-color: var(--background--color);

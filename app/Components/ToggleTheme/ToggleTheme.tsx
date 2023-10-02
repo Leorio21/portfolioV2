@@ -5,8 +5,7 @@ import { BsFillSunFill, BsFillMoonStarsFill } from "react-icons/bs";
 
 function ToggleTheme() {
   const [toggleTheme, setToggleTheme] = useState(false);
-  const [buttonText, setButtonText] = useState("Light");
-  const buttonTheme = useRef<HTMLDivElement>(null)
+  const buttonTheme = useRef<HTMLDivElement>(null);
 
   const changeTheme = () => {
     setToggleTheme((prev) => {
@@ -14,31 +13,33 @@ function ToggleTheme() {
     });
   };
 
+  const lightThemeActive = () => {
+    document.body.classList.remove("dark");
+    document.body.classList.add("light");
+    buttonTheme.current?.classList.add(styles.buttonLight);
+  };
+
+  const darkThemeActive = () => {
+    document.body.classList.remove("light");
+    document.body.classList.add("dark");
+    buttonTheme.current?.classList.remove(styles.buttonLight);
+  };
+
   useEffect(() => {
     if (toggleTheme) {
-      setButtonText("Dark");
-      document.body.classList.remove("dark");
-      document.body.classList.add("light");
-      buttonTheme.current?.classList.add(styles.buttonLight)
+      lightThemeActive();
     } else {
-      setButtonText("Light");
-      document.body.classList.remove("light");
-      document.body.classList.add("dark");
-      buttonTheme.current?.classList.remove(styles.buttonLight);
+      darkThemeActive();
     }
   }, [toggleTheme]);
 
   useEffect(() => {
     if (window.matchMedia("(prefers-color-scheme: light)").matches) {
       setToggleTheme(true);
-      document.body.classList.remove("dark");
-      document.body.classList.add("light");
-      buttonTheme.current?.classList.add(styles.buttonLight);
+      lightThemeActive();
     } else {
       setToggleTheme(false);
-      document.body.classList.remove("light");
-      document.body.classList.add("dark");
-      buttonTheme.current?.classList.remove(styles.buttonLight);
+      darkThemeActive();
     }
   }, []);
 
