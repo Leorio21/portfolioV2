@@ -8,7 +8,7 @@ interface CardProps {
 
 function CompetenceCard({ name }: CardProps) {
   return (
-    <figure>
+    <figure className={styles.figure}>
       <Image
         src={`../competences/${name}.svg`}
         width={80}

@@ -5,8 +5,8 @@
   --text--color: rgb(36, 36, 36);
   --background--color: rgb(221, 221, 221);
   --secondary--background--color: rgb(197, 197, 197);
-  --form-label--font: "Young Serif", "arial", "sans serif";
-  --border-radius: .8rem;
+  --form--label--font: "Young Serif", "arial", "sans serif";
+  --border--radius: .8rem;
   --test--theme: red;
 }
 
