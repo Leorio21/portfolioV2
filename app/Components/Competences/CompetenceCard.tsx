@@ -1,12 +1,12 @@
 import React from "react";
 import Image from "next/image";
-import styles from "./CompetenceCard.module.css"
+import styles from "./CompetenceCard.module.css";
 
 interface CardProps {
   name: string;
 }
 
-function CompetenceCard({ name }: CardProps) {
+export default function CompetenceCard({ name }: CardProps) {
   return (
     <figure className={styles.figure}>
       <Image
@@ -19,5 +19,3 @@ function CompetenceCard({ name }: CardProps) {
     </figure>
   );
 }
-
-export default CompetenceCard;

@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import { AiOutlineClose } from "react-icons/ai"
+import { AiOutlineClose } from "react-icons/ai";
 import style from "./Notify.module.css";
 
 interface NotifyProps {
@@ -9,28 +9,27 @@ interface NotifyProps {
 }
 
 const Notify = ({
-	inTheme,
-	inContent,
-	inSetNotify,
+  inTheme,
+  inContent,
+  inSetNotify,
 }: NotifyProps): React.ReactElement => {
+  const notifyRef = useRef<HTMLDivElement>(null);
 
-	const notifyRef = useRef<HTMLDivElement>(null)
+  const onCloseHandle = (): void => {
+    inSetNotify("");
+  };
 
-	const onCloseHandle = (): void => {
-		inSetNotify("");
-	};
+  useEffect(() => {
+    if (notifyRef.current !== null) {
+      if (inContent === "") {
+        notifyRef.current.classList.remove(style.anim);
+      } else {
+        notifyRef.current.classList.add(style.anim);
+      }
+    }
+  }, [inContent]);
 
-	useEffect(() => {
-		if (notifyRef.current !== null) {
-			if (inContent === "") {
-				notifyRef.current.classList.remove(style.anim)
-			} else {
-				notifyRef.current.classList.add(style.anim)
-			}
-		}
-	}, [inContent])
-
-	return (
+  return (
     <div className={`${style.container} ${style[inTheme]}`} ref={notifyRef}>
       {inContent}
       <div onClick={onCloseHandle} className={style.closeButton}>

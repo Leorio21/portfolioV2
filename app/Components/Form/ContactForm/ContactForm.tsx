@@ -10,56 +10,59 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 
-const schema = yup.object().shape({
-  firstName: yup
-    .string()
-    .required("Veuillez saisir votre prénom")
-    .matches(/^[a-zÀ-ÖØ-öø-ÿ -]+$/i, "Présence de caractères non authorisés"),
-  lastName: yup
-    .string()
-    .required("Veuillez saisir votre nom")
-    .matches(/^[a-z -]+$/i, "Présence de caractères non authorisés"),
-  phone: yup.string().when("email", {
-    is: (value: string) => value === "",
-    then: () =>
-      yup
-        .string()
-        .required("Veuillez saisir votre numéro de téléphone ou email")
-        .matches(
-          /^(0|\+33)[1-79][0-9]{8}$/,
-          "Veuillez saisir un numéro de téléphone valide",
-        ),
-    otherwise: () =>
-      yup
-        .string()
-        .matches(/^(0|\+33)[1-79][0-9]{8}$/, {
-          message: "Veuillez saisir un numéro de téléphone valide",
-          excludeEmptyString: true,
-        })
-        .optional(),
-  }),
-  email: yup.string().when("phone", {
-    is: (value: string) => value === "",
-    then: () =>
-      yup
-        .string()
-        .required("Veuillez saisir votre email ou numéro de téléphone")
-        .matches(
-          /^([a-z0-9-_\.]+)@([a-z0-9-]+)\.([a-z-]{2,})$/i,
-          "Veuillez saisir un email valide",
-        ),
-    otherwise: () =>
-      yup
-        .string()
-        .matches(/^([a-z0-9-_\.]+)@([a-z0-9-]+)\.([a-z-]{2,})$/i, {
-          message: "Veuillez saisir un email valide",
-          excludeEmptyString: true,
-        })
-        .optional(),
-  }),
-  subject: yup.string().required("Veuillez saisir un sujet"),
-  message: yup.string().required("Veuillez saisir votre message"),
-}, [["email", "phone"]]);
+const schema = yup.object().shape(
+  {
+    firstName: yup
+      .string()
+      .required("Veuillez saisir votre prénom")
+      .matches(/^[a-zÀ-ÖØ-öø-ÿ -]+$/i, "Présence de caractères non authorisés"),
+    lastName: yup
+      .string()
+      .required("Veuillez saisir votre nom")
+      .matches(/^[a-z -]+$/i, "Présence de caractères non authorisés"),
+    phone: yup.string().when("email", {
+      is: (value: string) => value === "",
+      then: () =>
+        yup
+          .string()
+          .required("Veuillez saisir votre numéro de téléphone ou email")
+          .matches(
+            /^(0|\+33)[1-79][0-9]{8}$/,
+            "Veuillez saisir un numéro de téléphone valide",
+          ),
+      otherwise: () =>
+        yup
+          .string()
+          .matches(/^(0|\+33)[1-79][0-9]{8}$/, {
+            message: "Veuillez saisir un numéro de téléphone valide",
+            excludeEmptyString: true,
+          })
+          .optional(),
+    }),
+    email: yup.string().when("phone", {
+      is: (value: string) => value === "",
+      then: () =>
+        yup
+          .string()
+          .required("Veuillez saisir votre email ou numéro de téléphone")
+          .matches(
+            /^([a-z0-9-_\.]+)@([a-z0-9-]+)\.([a-z-]{2,})$/i,
+            "Veuillez saisir un email valide",
+          ),
+      otherwise: () =>
+        yup
+          .string()
+          .matches(/^([a-z0-9-_\.]+)@([a-z0-9-]+)\.([a-z-]{2,})$/i, {
+            message: "Veuillez saisir un email valide",
+            excludeEmptyString: true,
+          })
+          .optional(),
+    }),
+    subject: yup.string().required("Veuillez saisir un sujet"),
+    message: yup.string().required("Veuillez saisir votre message"),
+  },
+  [["email", "phone"]],
+);
 
 export default function ContactForm(): JSX.Element {
   const {
