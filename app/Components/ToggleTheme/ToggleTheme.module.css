@@ -24,7 +24,7 @@
   transition: all .3s ease-in-out;
 }
 
-.buttonLight {
+.buttonMove {
   left: calc(100% - 3.3rem);
 }
 

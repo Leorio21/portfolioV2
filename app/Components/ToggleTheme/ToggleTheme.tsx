@@ -16,13 +16,13 @@ function ToggleTheme() {
   const lightThemeActive = () => {
     document.body.classList.remove("dark");
     document.body.classList.add("light");
-    buttonTheme.current?.classList.add(styles.buttonLight);
+    buttonTheme.current?.classList.add(styles.buttonMove);
   };
 
   const darkThemeActive = () => {
     document.body.classList.remove("light");
     document.body.classList.add("dark");
-    buttonTheme.current?.classList.remove(styles.buttonLight);
+    buttonTheme.current?.classList.remove(styles.buttonMove);
   };
 
   useEffect(() => {

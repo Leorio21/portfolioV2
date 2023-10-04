@@ -12,8 +12,8 @@
   height: 3rem;
   padding: .3rem 1rem;
   border-radius: var(--border-radius);
-  color: var(--background--color);
-  background-color: var(--text--color);
+  color: var(--text--color);
+  background-color: var(--secondary--background--color);
   font-size: 1.5rem;
 }
 
@@ -26,8 +26,7 @@
 
 .labelMove {
   margin: 0;
-  transform: translateY(2.3rem) translateX(5rem);
-  color: var(--background--color);
+  transform: translateY(2.5rem) translateX(5rem);
 }
 
 .error {
