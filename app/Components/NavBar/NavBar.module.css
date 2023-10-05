@@ -4,9 +4,19 @@
   width: 100%;
   z-index: 99;
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
   align-items: center;
   padding: 2rem;
-  background-image: linear-gradient(rgba(var(--background--color), 1), rgba(var(--background--color), .3));
+  background-image: linear-gradient(var(--header--background--top), var(--header--background--bottom));
   backdrop-filter: blur(15px);
+}
+
+.navBar {
+  display: flex;
+  gap: 10px;
+}
+
+.navBar__Item {
+  padding: 5px 15px;
+  font-size: 1.5rem;
 }

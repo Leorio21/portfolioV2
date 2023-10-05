@@ -7,9 +7,15 @@ export default function NavBar(): JSX.Element {
     <div className={styles.container}>
       <ToggleTheme />
       <nav className={styles.navBar}>
-        <a href="#competences">Compétences</a>
-        <a href="#projets">Projets</a>
-        <a href="#contact">Contact</a>
+        <a href="#competences" className={styles.navBar__Item}>
+          Compétences
+        </a>
+        <a href="#projets" className={styles.navBar__Item}>
+          Projets
+        </a>
+        <a href="#contact" className={styles.navBar__Item}>
+          Contact
+        </a>
       </nav>
     </div>
   );
