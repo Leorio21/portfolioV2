@@ -15,7 +15,7 @@ function Competences() {
   ];
 
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id="competences">
       <h2>Compétences</h2>
       <div className={styles.competencesContainer}>
         {competencesList.map((comp, key) => {

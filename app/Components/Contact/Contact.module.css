@@ -5,3 +5,7 @@
   justify-content: center;
   align-items: center;
 }
+
+#contact {
+  scroll-margin: var(--scroll--margin);
+}

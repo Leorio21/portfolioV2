@@ -1,9 +1,12 @@
 .container {
   position: sticky;
   top: 0;
+  width: 100%;
   z-index: 99;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: start;
   align-items: center;
   padding: 2rem;
+  background-image: linear-gradient(rgba(var(--background--color), 1), rgba(var(--background--color), .3));
+  backdrop-filter: blur(15px);
 }

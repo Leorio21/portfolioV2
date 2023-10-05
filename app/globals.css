@@ -4,10 +4,12 @@
   --bg--img--home: url("../public/fond_code_ligth.webp");
   --text--color: rgb(36, 36, 36);
   --background--color: rgb(221, 221, 221);
+  --header--background--start: rgba(36, 36, 36, 1);
+  --header--background--start: rgba(36, 36, 36, .3);
   --secondary--background--color: rgb(197, 197, 197);
   --form--label--font: "Young Serif", "arial", "sans serif";
   --border--radius: .8rem;
-  --test--theme: red;
+  --scroll--margin: 100px;
 }
 
 .dark {
@@ -15,7 +17,6 @@
   --text--color: rgb(221, 221, 221);
   --background--color: rgb(36, 36, 36);
   --secondary--background--color: rgb(65, 65, 65);
-  --test--theme: blue;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,12 +25,12 @@
     --text--color: rgb(221, 221, 221);
     --background--color: rgb(36, 36, 36);
     --secondary--background--color: rgb(65, 65, 65);
-    --test--theme: blue;
   }
 }
 
 * {
   box-sizing: border-box;
+  border: unset;
   padding: 0;
   margin: 0;
   color: var(--text--color);
@@ -42,7 +43,6 @@ html {
   justify-content: center;
   scroll-behavior: smooth;
 }
-
 
 body {
   width: 100%;

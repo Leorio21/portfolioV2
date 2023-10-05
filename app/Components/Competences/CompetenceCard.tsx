@@ -10,7 +10,7 @@ export default function CompetenceCard({ name }: CardProps) {
   return (
     <figure className={styles.figure}>
       <Image
-        src={`../competences/${name}.svg`}
+        src={`/competences/${name}.svg`}
         width={80}
         height={80}
         alt={`Logo ${name}`}
