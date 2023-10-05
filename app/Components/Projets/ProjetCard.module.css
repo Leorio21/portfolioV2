@@ -74,11 +74,8 @@
 }
 
 @media (width > 600px) {
-  .container {
-    grid-template-columns: 33% 33% 33%;
-  }
-
   .miniatureLeft {
+    grid-template-columns: 40% 30% 30%;
     grid-template-areas:
       "miniature title title"
       "miniature description description"
@@ -86,6 +83,7 @@
   }
 
   .miniatureRight {
+    grid-template-columns: 30% 30% 40%;
     grid-template-areas:
       "title title miniature"
       "description description miniature"

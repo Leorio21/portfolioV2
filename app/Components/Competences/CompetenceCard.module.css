@@ -4,7 +4,6 @@
   border: 4px outset var(--background--color);
   border-radius: var(--border--radius);
   box-shadow: .5rem .5rem .7rem var(--text--color);
-  /* transform: translateZ(10px); */
   transition: all 0.3s ease-in-out;
   filter: grayscale(1);
 }
@@ -17,7 +16,7 @@
   font-size: 1.5rem;
   background-color: var(--secondary--background--color);
   border: 2px inset var(--text--color);
-  padding: 1rem;
+  padding: 10px 0;
   transition: all 0.3s ease-in-out;
 }
 
