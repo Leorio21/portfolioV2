@@ -33,7 +33,7 @@ const Notify = ({
     <div className={`${style.container} ${style[inTheme]}`} ref={notifyRef}>
       {inContent}
       <div onClick={onCloseHandle} className={style.closeButton}>
-        <AiOutlineClose height={20} className={style.closeButtonIcon} />
+        <AiOutlineClose height={20} className={style.closeButtonIcon} aria-label="Fermer" />
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-.FormContainer {
+.formContainer {
   display: flex;
   flex-direction: column;
   width: 90%;
@@ -13,7 +13,7 @@
 }
 
 @media (width > 480px) {
-  .FormContainer {
+  .formContainer {
     width: 80%;
     display: grid;
     grid-template-columns: 50% 50%;

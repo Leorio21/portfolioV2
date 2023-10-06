@@ -3,10 +3,20 @@
 }
 
 .container {
+  position: relative;
   width: 100%;
   height: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 10%;
+  left: 10%;
+  box-shadow: 0 0 20rem 8rem var(--box-shadow--color);
 }

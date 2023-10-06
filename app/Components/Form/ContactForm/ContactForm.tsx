@@ -101,7 +101,7 @@ export default function ContactForm(): JSX.Element {
 
   return (
     <>
-      <form className={style.FormContainer}>
+      <form className={style.formContainer}>
         <Input
           inId="lastName"
           inType="text"
