@@ -55,10 +55,12 @@ export default function Projets() {
   ];
 
   return (
-    <section className={styles.container} id="projets">
-      <h2>Projets</h2>
+    <section className={styles.container}>
+      <h2 id="projets" className={styles.ancre}>
+        Projets
+      </h2>
       {projets.map((projet, idx) => {
-        return <ProjetCard projet={projet} nmr={idx} key={idx} />
+        return <ProjetCard projet={projet} nmr={idx} key={idx} />;
       })}
     </section>
   );

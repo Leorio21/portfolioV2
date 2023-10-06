@@ -15,8 +15,10 @@ function Competences() {
   ];
 
   return (
-    <section className={styles.container} id="competences">
-      <h2>Compétences</h2>
+    <section className={styles.container}>
+      <h2 id="competences" className={styles.ancre}>
+        Compétences
+      </h2>
       <div className={styles.competencesContainer}>
         {competencesList.map((comp, key) => {
           return <CompetenceCard name={comp} key={key} />;

@@ -1,12 +1,9 @@
-.ancre {
-  scroll-margin-top: var(--scroll--margin--top);
-}
-
 .container {
   width: 100%;
   height: 100dvh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  background-image: var(--bg--img--home);
+  background-attachment: fixed;
 }

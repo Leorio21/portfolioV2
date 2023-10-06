@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
 
 :root, .light {
-  --bg--img--home: url("../public/fond_code_ligth.webp");
+  --bg--img--home: url("/fond_code_ligth.webp");
   --text--color: rgb(36, 36, 36);
   --background--color: rgb(221, 221, 221);
   --header--background--top: rgba(221, 221, 221, 1);
@@ -9,11 +9,11 @@
   --secondary--background--color: rgb(197, 197, 197);
   --form--label--font: "Young Serif", "arial", "sans serif";
   --border--radius: .8rem;
-  --scroll--margin: 100px;
+  --scroll--margin--top: 70px;
 }
 
 .dark {
-  --bg--img--home: url("../public/fond_code_dark.webp");
+  --bg--img--home: url("/fond_code_dark.webp");
   --text--color: rgb(221, 221, 221);
   --background--color: rgb(36, 36, 36);
   --header--background--top: rgba(36, 36, 36, 1);
@@ -23,11 +23,11 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg--img--home: url("../public/fond_code_dark.webp");
+    --bg--img--home: url("/fond_code_dark.webp");
     --text--color: rgb(221, 221, 221);
     --background--color: rgb(36, 36, 36);
-  --header--background--top: rgba(36, 36, 36, 1);
-  --header--background--bottom: rgba(36, 36, 36, .3);
+    --header--background--top: rgba(36, 36, 36, 1);
+    --header--background--bottom: rgba(36, 36, 36, .3);
     --secondary--background--color: rgb(65, 65, 65);
   }
 }
