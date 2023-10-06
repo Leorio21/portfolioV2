@@ -9,7 +9,8 @@
   --secondary--background--color: rgb(197, 197, 197);
   --form--label--font: "Young Serif", "arial", "sans serif";
   --border--radius: .8rem;
-  --scroll--margin--top: 70px;
+  --scroll-margin--top: 70px;
+  --box-sahow--color: rgb(0, 0, 0);
 }
 
 .dark {
@@ -19,6 +20,7 @@
   --header--background--top: rgba(36, 36, 36, 1);
   --header--background--bottom: rgba(36, 36, 36, .3);
   --secondary--background--color: rgb(65, 65, 65);
+  --box-sahow--color: rgb(57, 135, 159);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -29,6 +31,7 @@
     --header--background--top: rgba(36, 36, 36, 1);
     --header--background--bottom: rgba(36, 36, 36, .3);
     --secondary--background--color: rgb(65, 65, 65);
+    --box-sahow--color: rgb(57, 135, 159);
   }
 }
 

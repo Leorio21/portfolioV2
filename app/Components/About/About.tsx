@@ -5,7 +5,7 @@ export default function About() {
   return (
     <section className={styles.container}>
       <h2 id="about" className={styles.ancre}>
-        About
+        A propos de moi
       </h2>
       <div className={styles.presentation}>
         <p>

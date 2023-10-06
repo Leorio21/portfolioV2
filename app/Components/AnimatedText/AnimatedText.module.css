@@ -1,0 +1,32 @@
+.h-60 {
+  display: block;
+  height: 60px;
+  font-size: 25px;
+  color: var(--text--color);
+}
+
+.rotate {
+  animation: rotation 0.5s both linear;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(90deg)
+  }
+}
+
+.rotateFR {
+  animation: rotationFR 0.5s both linear;
+}
+
+@keyframes rotationFR {
+  0% {
+    transform: rotateX(90deg);
+  }
+  100% {
+    transform: rotateX(0deg)
+  }
+}

@@ -4,8 +4,11 @@
   width: 108px;
   border: 2px outset var(--background--color);
   border-radius: var(--border--radius);
-  box-shadow: .5rem .5rem .7rem var(--text--color);
+  box-shadow: .5rem .5rem .7rem var(--box-sahow--color);
   transition: all 0.3s ease-in-out;
+}
+
+.figure img {
   filter: grayscale(1);
 }
 
@@ -21,10 +24,14 @@
 }
 
 .figure:hover {
-  filter: grayscale(0);
-  box-shadow: 0 0 5rem var(--text--color);
+  box-shadow: 0 0 5rem var(--box-sahow--color);
   z-index: 1;
+  border: 2px outset var(--box-sahow--color);
   transform: translateX(calc(50% - 54px)) translateY(calc(50% - 81px)) scale(1.5);
+}
+
+.figure:hover img {
+  filter: grayscale(0);
 }
 
 .figure:hover figcaption {
