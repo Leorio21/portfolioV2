@@ -59,6 +59,10 @@
     backdrop-filter: blur(15px);
   }
 
+  .burger {
+    visibility: hidden;
+  }
+
   .navBar {
     flex-direction: row;
   }
