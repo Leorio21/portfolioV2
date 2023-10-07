@@ -6,15 +6,19 @@ import Projets from "./Components/Projets/Projets";
 import About from "./Components/About/About";
 import Header from "./Components/Header/Header";
 
+import styles from "./page.module.css";
+
 export default function Home() {
   return (
     <>
       <NavBar />
       <Header />
-      <About />
-      <Competences />
-      <Projets />
-      <Contact />
+      <main role="main" className={styles.main}>
+        <About />
+        <Competences />
+        <Projets />
+        <Contact />
+      </main>
     </>
   );
 }

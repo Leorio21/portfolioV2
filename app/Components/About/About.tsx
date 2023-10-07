@@ -17,7 +17,7 @@ export default function About() {
           Depuis toujours, j'ai été attiré par l'informatique et le
           développement et j'ai consacré de nombreuses années à développer mes
           compétences dans ce domaine. Que ce soit la conception de sites web ou
-          la résolution de problèmes liés au problèmes métier, j'aime relever
+          la résolution de problèmes, j'aime relever
           les défis qui se présentent à moi.
         </p>
         <p>
