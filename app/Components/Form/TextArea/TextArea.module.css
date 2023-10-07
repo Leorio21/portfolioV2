@@ -21,6 +21,7 @@
 
 .label {
   margin: .5rem;
+  width: fit-content;
   font-family: var(--form--label--font);
   font-size: 1.5rem;
   transition: all 0.4s ease-in-out;

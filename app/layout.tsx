@@ -1,4 +1,5 @@
 import "./globals.css";
+import styles from "./layout.module.css";
 import type { Metadata } from "next";
 import { Inter, Lugrasimo } from "next/font/google";
 
@@ -30,7 +31,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr">
-      <body className={`${inter.variable} ${lugrasimo.variable}`}>
+      <body
+        className={`${inter.variable} ${lugrasimo.variable} ${styles.container}`}
+      >
         {children}
       </body>
     </html>

@@ -9,7 +9,7 @@
   --secondary--background--color: rgb(197, 197, 197);
   --form--label--font: "Young Serif", "arial", "sans serif";
   --border--radius: .8rem;
-  --scroll-margin--top: 70px;
+  --scroll-margin--top: 0;
   --box-shadow--color: rgb(255, 145, 0);
 }
 
@@ -85,6 +85,9 @@ section {
 }
 
 @media (width > 550px) {
+  :root {
+    --scroll-margin--top: 70px;
+  }
 
   section {
     padding: 50px;

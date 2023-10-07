@@ -3,8 +3,13 @@ import React, { useEffect, useRef, useState } from "react";
 import { BsFillSunFill, BsFillMoonStarsFill } from "react-icons/bs";
 import styles from "./ToggleTheme.module.css";
 
-function ToggleTheme() {
+interface ToggleThemeProps {
+  toogleMenu: () => void;
+}
+
+function ToggleTheme({ toogleMenu }: ToggleThemeProps) {
   const [toggleTheme, setToggleTheme] = useState(false);
+  const [first, setFirst] = useState(true);
   const buttonTheme = useRef<HTMLDivElement>(null);
 
   const changeTheme = () => {
@@ -31,15 +36,17 @@ function ToggleTheme() {
     } else {
       darkThemeActive();
     }
+    if (first) {
+      setFirst(false);
+    } else {
+      toogleMenu();
+    }
   }, [toggleTheme]);
 
   useEffect(() => {
     if (window.matchMedia("(prefers-color-scheme: light)").matches) {
       setToggleTheme(true);
       lightThemeActive();
-    } else {
-      setToggleTheme(false);
-      darkThemeActive();
     }
   }, []);
 
