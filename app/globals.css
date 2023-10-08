@@ -11,6 +11,7 @@
   --border--radius: .8rem;
   --scroll-margin--top: 0;
   --box-shadow--color: rgb(255, 145, 0);
+  --box--tilt--color: rgba(255, 145, 0, .3);
 }
 
 .dark {
@@ -21,6 +22,7 @@
   --header--background--bottom: rgba(36, 36, 36, .3);
   --secondary--background--color: rgb(65, 65, 65);
   --box-shadow--color: rgb(57, 135, 159);
+  --box--tilt--color: rgba(57, 135, 159, .3);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -32,6 +34,7 @@
     --header--background--bottom: rgba(36, 36, 36, .3);
     --secondary--background--color: rgb(65, 65, 65);
     --box-shadow--color: rgb(57, 135, 159);
+  --box--tilt--color: rgba(57, 135, 159, .3);
   }
 }
 
@@ -88,7 +91,9 @@ section {
   :root {
     --scroll-margin--top: 70px;
   }
+}
 
+@media (width > 700px) {
   section {
     padding: 50px;
   }

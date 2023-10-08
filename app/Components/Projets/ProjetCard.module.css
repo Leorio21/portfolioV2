@@ -1,4 +1,5 @@
 .container {
+  position: relative;
   min-width: 300px;
   width: 95%;
   margin: 10px 0;
@@ -8,28 +9,36 @@
   font-size: 1.5rem;
   font-family: var(--font--inter), Courier, monospace;
   background-color: var(--secondary--background--color);
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 50px auto 50px;
+  display: flex;
 }
 
-.miniatureLeft, .miniatureRight {
-  grid-template-areas:
-    "title title"
-    "description description"
-    "lien_code lien_site";
+.reverse {
+  flex-direction: row;
 }
 
 .miniature {
   position: relative;
-  grid-area: miniature;
+  width: 40%;
+  background-color: var(--background--color);
   display: flex;
   justify-content: center;
   align-items: center;
-  visibility: hidden;
+  display: none;
   border: 2px outset var(--text--color);
   border-radius: 10px;
   overflow: hidden;
+}
+
+.project-infos {
+  z-index: 1;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50px auto 50px;
+  grid-template-areas:
+    "title title"
+    "description description"
+    "lien_code lien_site";
 }
 
 .description {
@@ -73,24 +82,46 @@
   grid-area: lien_site;
 }
 
-@media (width > 600px) {
-  .miniatureLeft {
-    grid-template-columns: 40% 30% 30%;
-    grid-template-areas:
-      "miniature title title"
-      "miniature description description"
-      "miniature lien_code lien_site";
-  }
+.tilt {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
 
-  .miniatureRight {
-    grid-template-columns: 30% 30% 40%;
-    grid-template-areas:
-      "title title miniature"
-      "description description miniature"
-      "lien_code lien_site miniature";
+.tilt svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 200px;
+}
+
+.tilt-rotate {
+  transform: rotateY(0);
+}
+
+.shape-fill {
+    fill: var(--box--tilt--color);
+}
+
+@media (width > 600px) {
+
+  .reverse {
+    flex-direction: row-reverse;
   }
 
   .miniature {
-    visibility: unset;
+    display: block;
   }
+
+  .project-infos {
+    width: 60%;
+  }
+
+  .tilt-rotate {
+  transform: rotateY(180deg);
+}
 }
