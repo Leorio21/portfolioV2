@@ -24,11 +24,13 @@ export default function NavBar(): JSX.Element {
       <RxHamburgerMenu
         className={`${styles.burger} ${styles.icone}`}
         onClick={toggleMenu}
+        aria-label="ouvrir menu"
       />
       <div className={styles.container} id="menu">
         <RxCrossCircled
           className={`${styles.close} ${styles.icone}`}
           onClick={toggleMenu}
+          aria-label="fermer menu"
         />
         <ToggleTheme toogleMenu={toggleMenu} />
         <nav className={styles.navBar}>
