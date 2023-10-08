@@ -10,12 +10,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: var(--bg--img--contact);
+  background-attachment: fixed;
 }
 
 .container::before {
   content: "";
   position: absolute;
-  z-index: -1;
+  z-index: 0;
   top: 10%;
   left: 10%;
   box-shadow: 0 0 20rem 8rem var(--box-shadow--color);

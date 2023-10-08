@@ -2,6 +2,7 @@
 
 :root, .light {
   --bg--img--home: url("/fond_code_ligth.webp");
+  --bg--img--contact: url("/fond_etoiles_light.webp");
   --text--color: rgb(36, 36, 36);
   --background--color: rgb(221, 221, 221);
   --header--background--top: rgba(221, 221, 221, 1);
@@ -16,6 +17,7 @@
 
 .dark {
   --bg--img--home: url("/fond_code_dark.webp");
+  --bg--img--contact: url("/fond_etoiles_dark.webp");
   --text--color: rgb(221, 221, 221);
   --background--color: rgb(36, 36, 36);
   --header--background--top: rgba(36, 36, 36, 1);
@@ -28,13 +30,14 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --bg--img--home: url("/fond_code_dark.webp");
+    --bg--img--contact: url("/fond_etoiles_dark.webp");
     --text--color: rgb(221, 221, 221);
     --background--color: rgb(36, 36, 36);
     --header--background--top: rgba(36, 36, 36, 1);
     --header--background--bottom: rgba(36, 36, 36, .3);
     --secondary--background--color: rgb(65, 65, 65);
     --box-shadow--color: rgb(57, 135, 159);
-  --box--tilt--color: rgba(57, 135, 159, .3);
+    --box--tilt--color: rgba(57, 135, 159, 0.3);
   }
 }
 
