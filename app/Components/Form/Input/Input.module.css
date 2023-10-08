@@ -2,14 +2,14 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  height: 8.6rem;
+  height: 11rem;
   width: 100%;
   position: relative;
   align-self: end;
 }
 
 .input {
-  height: 3rem;
+  height: 5rem;
   padding: .3rem 1rem;
   border: 2px inset var(--box-shadow--color);
   border-radius: var(--border--radius);
@@ -28,7 +28,7 @@
 
 .labelMove {
   margin: 0;
-  transform: translateY(2.5rem) translateX(5rem);
+  transform: translateY(3.3rem) translateX(5rem);
 }
 
 .error {
