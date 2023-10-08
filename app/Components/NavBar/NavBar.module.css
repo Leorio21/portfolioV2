@@ -8,7 +8,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items:center;
   padding: 2rem;
   background-color: var(--background--color);
   transition: left .3s ease-in-out;
@@ -21,24 +21,32 @@
 .burger {
   position: fixed;
   z-index: 2;
-  top: 20px;
-  right: 20px;
-  width: 40px;
-  height: 40px;
   border: 2px solid var(--text--color);
   border-radius: var(--border--radius);
   background-color: var(--background--color);
   padding: 5px;
 }
 
+.close {
+  position: absolute;
+}
+
+.icone {
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+}
+
 .navBar {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
 .navBar__Item {
-  padding: 5px 15px;
+  padding: 5px 0;
   font-size: 1.5rem;
   line-height: 4rem;
 }
@@ -46,20 +54,13 @@
 @media (width > 550px) {
   .container {
     position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 99;
-    display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem;
     background-color: unset;
     background-image: linear-gradient(var(--header--background--top), var(--header--background--bottom));
     backdrop-filter: blur(15px);
   }
 
-  .burger {
+  .burger, .close {
     visibility: hidden;
   }
 
@@ -68,6 +69,7 @@
   }
 
   .navBar__Item {
+    padding: 5px 15px;
     line-height: unset;
   }
 }

@@ -1,8 +1,8 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import styles from "./NavBar.module.css";
 import ToggleTheme from "../ToggleTheme/ToggleTheme";
-import { RxHamburgerMenu } from "react-icons/rx";
+import { RxHamburgerMenu, RxCrossCircled } from "react-icons/rx";
 
 export default function NavBar(): JSX.Element {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,8 +21,15 @@ export default function NavBar(): JSX.Element {
 
   return (
     <>
-      <RxHamburgerMenu className={styles.burger} onClick={toggleMenu} />
+      <RxHamburgerMenu
+        className={`${styles.burger} ${styles.icone}`}
+        onClick={toggleMenu}
+      />
       <div className={styles.container} id="menu">
+        <RxCrossCircled
+          className={`${styles.close} ${styles.icone}`}
+          onClick={toggleMenu}
+        />
         <ToggleTheme toogleMenu={toggleMenu} />
         <nav className={styles.navBar}>
           <a href="#about" className={styles.navBar__Item} onClick={toggleMenu}>
