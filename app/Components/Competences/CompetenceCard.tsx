@@ -8,26 +8,28 @@ interface CardProps {
 
 export default function CompetenceCard({ name }: CardProps) {
   return (
-    <div className={styles.card}>
-      <figure className={styles.recto}>
-        <Image
-          src={`/Competences/${name}.svg`}
-          width={80}
-          height={80}
-          alt={`Logo ${name}`}
-          loading="lazy"
-        />
-      </figure>
-      <figure className={styles.figure}>
-        <Image
-          src={`/Competences/${name}.svg`}
-          width={80}
-          height={80}
-          alt={`Logo ${name}`}
-          loading="lazy"
-        />
-        <figcaption className={styles.figcaption}>{name}</figcaption>
-      </figure>
+    <div className={styles.container}>
+      <div className={styles.card}>
+        <figure className={styles.recto}>
+          <Image
+            src={`/Competences/${name}.svg`}
+            width={80}
+            height={80}
+            alt={`Logo ${name}`}
+            loading="lazy"
+          />
+        </figure>
+        <figure className={styles.figure}>
+          <Image
+            src={`/Competences/${name}.svg`}
+            width={80}
+            height={80}
+            alt={`Logo ${name}`}
+            loading="lazy"
+          />
+          <figcaption className={styles.figcaption}>{name}</figcaption>
+        </figure>
+      </div>
     </div>
   );
 }
