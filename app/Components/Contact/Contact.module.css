@@ -21,5 +21,5 @@
   z-index: 0;
   top: 10%;
   left: 10%;
-  box-shadow: 0 0 20rem 8rem var(--box-shadow--color);
+  box-shadow: 0 0 20rem 8rem var(--contact--shadow--color);
 }
