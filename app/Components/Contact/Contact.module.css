@@ -1,5 +1,6 @@
 .ancre {
   scroll-margin-top: var(--scroll-margin--top);
+  z-index: 1;
 }
 
 .container {
