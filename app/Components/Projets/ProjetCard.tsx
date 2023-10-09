@@ -41,6 +41,7 @@ export default function ProjetCard({ projet, nmr }: ProjetCardProps) {
           style={{ objectFit: "contain" }}
           sizes="25vw"
           fill
+          loading="lazy"
         />
       </figure>
       <div className={styles["project-infos"]}>

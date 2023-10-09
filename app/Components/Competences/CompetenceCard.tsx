@@ -15,6 +15,7 @@ export default function CompetenceCard({ name }: CardProps) {
           width={80}
           height={80}
           alt={`Logo ${name}`}
+          loading="lazy"
         />
       </figure>
       <figure className={styles.figure}>
@@ -23,6 +24,7 @@ export default function CompetenceCard({ name }: CardProps) {
           width={80}
           height={80}
           alt={`Logo ${name}`}
+          loading="lazy"
         />
         <figcaption className={styles.figcaption}>{name}</figcaption>
       </figure>
