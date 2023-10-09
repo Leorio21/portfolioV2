@@ -4,7 +4,7 @@ import Input from "../Input/Input";
 import TextArea from "../TextArea/TextArea";
 import style from "./ContactForm.module.css";
 import { useNotify } from "@/app/Hooks/Notify/useNotify";
-import ButtonForm from "../ButtonForm/ButtonForm";
+import Button from "../Button/Button";
 import { IFormValues } from "@/app/Interfaces/Interfaces";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -162,19 +162,19 @@ export default function ContactForm(): JSX.Element {
           inWatch={watch}
         />
         <div className={style.buttons}>
-          <ButtonForm
-            inType="button"
-            inValue="Réinitialiser"
-            inColor="red"
-            inClick={() => {
+          <Button
+            type="button"
+            value="Réinitialiser"
+            color="reset"
+            onClick={() => {
               reset();
             }}
           />
-          <ButtonForm
-            inType="button"
-            inValue="Envoyer"
-            inColor="green"
-            inClick={handleSubmit(onFormSubmit)}
+          <Button
+            type="button"
+            value="Envoyer"
+            color="send"
+            onClick={handleSubmit(onFormSubmit)}
           />
         </div>
       </form>

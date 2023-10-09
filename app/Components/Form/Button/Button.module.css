@@ -1,0 +1,25 @@
+.reset {
+  --button--text--color: var(--button--reset--text--color);
+  --button--background--color: var(--button--reset--background--color)
+}
+
+.send {
+  --button--text--color: var(--button--send--text--color);
+  --button--background--color: var(--button--send--background--color)
+}
+
+.button {
+  height: 5rem;
+  width: 40%;
+  background-color: var(--button--background--color);
+  color: var(--button--text--color);
+  font-size: 1.5rem;
+  border-radius: var(--border--radius);
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  
+}
+
+.button:hover {
+  box-shadow: 0 0 2em var(--button--background--color);
+}
