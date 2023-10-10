@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import styles from "./CompetenceCard.module.css";
 import { FaArrowRotateLeft } from "react-icons/fa6"
 
@@ -12,7 +11,7 @@ export default function CompetenceCard({ name }: CardProps) {
     <div className={styles.container}>
       <div className={styles.card}>
         <figure className={styles.recto}>
-          <Image
+          <img
             src={`/Competences/${name}.svg`}
             width={80}
             height={80}
@@ -22,7 +21,7 @@ export default function CompetenceCard({ name }: CardProps) {
           <FaArrowRotateLeft className={styles.returnArrow} />
         </figure>
         <figure className={styles.figure}>
-          <Image
+          <img
             src={`/Competences/${name}.svg`}
             width={80}
             height={80}

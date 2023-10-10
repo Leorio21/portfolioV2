@@ -2,9 +2,12 @@
   z-index: 2;
 }
 
+.container:hover {
+  z-index: 3;
+}
+
 .container:hover .card {
-  z-index: 1;
-  transform: scale(1.5) rotateY(360deg);
+  transform: scale(1.5) rotateY(360deg) translateZ(-5px);
 }
 
 .container:hover .figure {
@@ -12,6 +15,7 @@
 }
 
 .card {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,11 +34,10 @@
 }
 
 .recto {
-  position: relative;
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
   transform: translateZ(-2px);
   filter: grayscale(1);
   width: 100%;
@@ -60,5 +63,4 @@
   font-size: 1.5rem;
   background-color: black;
   color: white;
-  padding: 10px 0;
 }

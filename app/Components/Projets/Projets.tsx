@@ -8,7 +8,7 @@ export default function Projets() {
       title: "Portfolio - WIP",
       miniature: "/carousel/Portfolio.webp",
       description:
-        "Ce portfolio\nPremier projet pour découvrir NextJS et affichage dark/Ligth mode en fonction des préférences utilisateur\n\nTechologies utilisées:\n\n- NextJS - TypeScript -",
+        "Ce portfolio\nPremier projet pour découvrir NextJS et gerer le premier affichage en dark/Ligth mode en fonction des préférences utilisateur\n\nTechologies utilisées:\n\n- NextJS - TypeScript -",
       code: "https://github.com/Leorio21/portfolio",
       site: "https://portfolio-leorio21.vercel.app/",
     },
