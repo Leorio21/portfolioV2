@@ -13,7 +13,7 @@ export default function Home() {
     <>
       <NavBar />
       <Header />
-      <main role="main" className={styles.main}>
+      <main className={styles.main}>
         <About />
         <Competences />
         <Projets />

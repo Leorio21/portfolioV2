@@ -69,9 +69,9 @@ export default function Input({
       className={style.inputContainer}
       style={{ gridArea: `${inGridPosition}` }}
     >
-      <p className={`${style.label} ${style.labelMove}`} ref={LabelRef}>
+      <span className={`${style.label} ${style.labelMove}`} ref={LabelRef}>
         {inLabel}
-      </p>
+      </span>
       <input
         id={inId}
         className={style.input}

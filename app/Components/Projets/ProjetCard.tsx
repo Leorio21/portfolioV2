@@ -16,7 +16,6 @@ export default function ProjetCard({ projet, nmr }: ProjetCardProps) {
           ? styles.container
           : `${styles.container} ${styles.reverse}`
       }
-      id={projet.title}
     >
       <div className={styles.tilt}>
         <svg
@@ -38,7 +37,6 @@ export default function ProjetCard({ projet, nmr }: ProjetCardProps) {
           blurDataURL={projet.miniature}
           alt="Capture d'ecran du projet"
           style={{ objectFit: "contain" }}
-          sizes="(max-width: 800) 50vw, 40vw"
           fill
           loading="lazy"
         />

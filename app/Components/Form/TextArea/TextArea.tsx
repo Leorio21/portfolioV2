@@ -68,9 +68,9 @@ export default function TextArea({
       className={style.textAreaContainer}
       style={{ gridArea: `${inGridPosition}` }}
     >
-      <p className={`${style.label} ${style.labelMove}`} ref={LabelRef}>
+      <span className={`${style.label} ${style.labelMove}`} ref={LabelRef}>
         {inLabel}
-      </p>
+      </span>
       <textarea
         className={style.area}
         id={inId}
