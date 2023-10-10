@@ -9,7 +9,6 @@
 
 .area {
   border-radius: var(--border--radius);
-  border: 2px inset var(--box-shadow--color);
   padding: .3rem 1rem;
   height: 18rem;
   font-size: 1.5rem;

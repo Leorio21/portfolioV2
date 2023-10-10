@@ -30,6 +30,7 @@
 }
 
 .recto {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,6 +41,15 @@
   height: 100%;
   background-color: white;
   border-radius: var(--border--radius);
+}
+
+.returnArrow {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  fill: black;
+  font-size: 1.5rem;
+  transform: rotateY(180deg);
 }
 
 .figcaption {

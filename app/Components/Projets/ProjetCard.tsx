@@ -38,7 +38,7 @@ export default function ProjetCard({ projet, nmr }: ProjetCardProps) {
           blurDataURL={projet.miniature}
           alt="Capture d'ecran du projet"
           style={{ objectFit: "contain" }}
-          sizes="25vw"
+          sizes="(max-width: 800) 50vw, 40vw"
           fill
           loading="lazy"
         />

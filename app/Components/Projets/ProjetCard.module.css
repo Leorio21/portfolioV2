@@ -4,8 +4,7 @@
   width: 95%;
   margin: 10px 0;
   padding: 10px;
-  border-radius: 10px;
-  border: 2px outset var(--box-shadow--color);
+  border-radius: var(--border--radius);
   font-size: 1.5rem;
   font-family: var(--font--inter), Courier, monospace;
   background-color: var(--secondary--background--color);
@@ -24,14 +23,16 @@
   justify-content: center;
   align-items: center;
   display: none;
-  border: 2px outset var(--text--color);
-  border-radius: 10px;
   overflow: hidden;
+}
+
+.miniature img {
+  border-radius: var(--border--radius);
 }
 
 .project-infos {
   z-index: 1;
-  width: 100%;
+  width: 60%;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 50px auto 50px;
@@ -90,6 +91,7 @@
   overflow: hidden;
   line-height: 0;
   transform: rotate(180deg);
+  border-radius: var(--border--radius) var(--border--radius) 0 0;
 }
 
 .tilt svg {

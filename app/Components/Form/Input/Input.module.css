@@ -11,7 +11,6 @@
 .input {
   height: 5rem;
   padding: .3rem 1rem;
-  border: 2px inset var(--box-shadow--color);
   border-radius: var(--border--radius);
   color: var(--text--color);
   background-color: var(--secondary--background--color);
