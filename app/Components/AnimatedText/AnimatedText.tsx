@@ -13,7 +13,7 @@ export default function AnimatedText({inTextStart, inTextEnd, inStartDelay = 0}:
 
 	const textRef = useRef<HTMLHeadingElement>(null);
 
-	const [text, setText] = useState("");
+	const [text, setText] = useState("$");
 	const delay = 150;
 
 	const textLetters = inTextStart;
