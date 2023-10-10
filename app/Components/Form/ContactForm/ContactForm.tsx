@@ -1,5 +1,6 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
 import Input from "../Input/Input";
 import TextArea from "../TextArea/TextArea";
 import style from "./ContactForm.module.css";
@@ -81,23 +82,25 @@ export default function ContactForm(): JSX.Element {
   );
 
   const onFormSubmit = async (data: IFormValues): Promise<void> => {
-    reset();
     setColor("warning");
     setNotify("Envoi en cours ...");
-    // await fetchFunction(data);
-  };
 
-  // useEffect(() => {
-  // 	if (response !== undefined) {
-  // 		console.log(response, response.status)
-  // 		if (response.status !== 200) {
-  // 			setColor("error");
-  // 		} else {
-  // 			setColor("success")
-  // 		}
-  // 		setNotify(response.message);
-  // 	}
-  // }, [response])
+    const result = await emailjs.send(
+      "service_9yero79",
+      "template_5pof98o",
+      { ...data },
+      "dZzLfvEUE6pkRSeo_",
+    );
+
+    if (result.status === 200) {
+      reset();
+      setColor("success");
+      setNotify("Votre message à bien été envoyé");
+    } else {
+      setColor("error");
+      setNotify("Une erreur est survenue, merci de ré-essayer plus tard");
+    }
+  };
 
   return (
     <>
