@@ -10,7 +10,7 @@ export default function CompetenceCard({ name }: CardProps) {
   return (
     <div className={styles.container}>
       <div className={styles.card}>
-        <figure className={styles.recto}>
+        <div className={`${styles.figure} ${styles.recto}`}>
           <img
             src={`/Competences/${name}.svg`}
             width={80}
@@ -19,8 +19,8 @@ export default function CompetenceCard({ name }: CardProps) {
             loading="lazy"
           />
           <FaArrowRotateLeft className={styles.returnArrow} />
-        </figure>
-        <figure className={styles.figure}>
+        </div>
+        <figure className={`${styles.figure} ${styles.verso}`}>
           <img
             src={`/Competences/${name}.svg`}
             width={80}

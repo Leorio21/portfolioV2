@@ -1,26 +1,38 @@
 .container {
-  position: fixed;
+  position: sticky;
+  z-index: 2;
   top: 0;
-  left: -100%;
   width: 100%;
-  height: max-content;
-  z-index: 5;
+  height: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: var(--background--color);
+  transition: all .3s ease-in-out;
+}
+
+.menu {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items:center;
   padding: 2rem;
-  background-color: var(--background--color);
-  transition: left .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  transform: translateY(-100%);
+}
+
+.openMenu {
+  height: 31.5rem;
 }
 
 .move {
-  left: 0;
+  transform: translateY(0);
 }
 
 .burger {
+  z-index: 3;
   position: fixed;
-  z-index: 4;
   border: 2px solid var(--text--color);
   border-radius: var(--border--radius);
   background-color: var(--background--color);
@@ -54,10 +66,20 @@
 @media (width > 550px) {
   .container {
     position: sticky;
+    height: fit-content;
     flex-direction: row;
     background-color: unset;
     background-image: linear-gradient(var(--header--background--top), var(--header--background--bottom));
     backdrop-filter: blur(15px);
+  }
+
+  .menu {
+    position: relative;
+    left: unset;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: unset;
+    transform: translateY(0);
   }
 
   .burger, .close {
