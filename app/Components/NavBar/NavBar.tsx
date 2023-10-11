@@ -10,7 +10,7 @@ export default function NavBar(): JSX.Element {
   const toggleMenu = () => {
     const burger = document.getElementById("menu");
     const menuContainer = document.getElementById("menu_container");
-    if (burger !== null && menuContainer !== null && window.innerWidth < 550) {
+    if (burger !== null && menuContainer !== null && window.innerWidth < 576) {
       if (!isMenuOpen) {
         menuContainer.classList.add(styles.openMenu);
         burger.classList.add(styles.move);
