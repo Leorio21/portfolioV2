@@ -63,7 +63,7 @@
   line-height: 4rem;
 }
 
-@media (width > 550px) {
+@media (width >= 576px) {
   .container {
     position: sticky;
     height: fit-content;

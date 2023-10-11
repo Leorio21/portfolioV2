@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import styles from "./NavBar.module.css";
 import ToggleTheme from "../ToggleTheme/ToggleTheme";
-import { RxHamburgerMenu, RxCrossCircled } from "react-icons/rx";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 export default function NavBar(): JSX.Element {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

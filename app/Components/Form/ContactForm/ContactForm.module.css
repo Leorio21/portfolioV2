@@ -12,7 +12,7 @@
   justify-content: space-around;
 }
 
-@media (width > 480px) {
+@media (width >= 576px) {
   .formContainer {
     width: 80%;
     max-width: 800px;
