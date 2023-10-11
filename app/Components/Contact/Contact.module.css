@@ -6,11 +6,22 @@
 .container {
   position: relative;
   width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-image: var(--bg--img--contact);
   background-attachment: fixed;
 }
@@ -21,5 +32,6 @@
   z-index: 0;
   top: 10%;
   left: 10%;
-  box-shadow: 0 0 20rem 8rem var(--contact--shadow--color);
+  -webkit-box-shadow: 0 0 20rem 8rem var(--contact--shadow--color);
+          box-shadow: 0 0 20rem 8rem var(--contact--shadow--color);
 }

@@ -1,15 +1,25 @@
 .formContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 90%;
 }
 
 .buttons {
   grid-area: buttons;
   padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 @media (width >= 576px) {
@@ -20,8 +30,10 @@
     grid-template-columns: 50% 50%;
     grid-template-rows: 11rem 11rem 11rem 26rem 11rem;
     row-gap: 1rem;
-    column-gap: 1rem;
-    grid-template-areas: 
+    -webkit-column-gap: 1rem;
+       -moz-column-gap: 1rem;
+            column-gap: 1rem;
+    grid-template-areas:
       "lastName firstName"
       "email tel"
       "subject subject"

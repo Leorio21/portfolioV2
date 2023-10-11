@@ -1,16 +1,24 @@
 .container {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 0 1rem;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 7rem;
   height: 3rem;
   color: var(--background--color);
   background-color: var(--text--color);
   font-size: 2rem;
   border-radius: 2.5rem;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   margin: 0 0 15px 0;
 }
 
@@ -19,11 +27,13 @@
   top: calc(50% - 1.25rem);
   left: 0.8rem;
   background-color: var(--text--color);
-  border: .2rem solid var(--background--color);
+  border: 0.2rem solid var(--background--color);
   border-radius: 2.5rem;
   width: 2.5rem;
   height: 2.5rem;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .buttonMove {

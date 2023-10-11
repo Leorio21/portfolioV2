@@ -1,11 +1,11 @@
 .reset {
   --button--text--color: var(--button--reset--text--color);
-  --button--background--color: var(--button--reset--background--color)
+  --button--background--color: var(--button--reset--background--color);
 }
 
 .send {
   --button--text--color: var(--button--send--text--color);
-  --button--background--color: var(--button--send--background--color)
+  --button--background--color: var(--button--send--background--color);
 }
 
 .button {
@@ -16,10 +16,11 @@
   font-size: 1.5rem;
   border-radius: var(--border--radius);
   overflow-x: hidden;
-  text-overflow: ellipsis;
-  
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
 }
 
 .button:hover {
-  box-shadow: 0 0 1.5rem var(--button--background--color);
+  -webkit-box-shadow: 0 0 1.5rem var(--button--background--color);
+          box-shadow: 0 0 1.5rem var(--button--background--color);
 }

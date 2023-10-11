@@ -1,5 +1,5 @@
 .success {
-  --notify--text--color: #FFFFFF;
+  --notify--text--color: #ffffff;
   --notify--bg--color: #00ac00;
   --notify--bg--color--hover: #007700;
   --notify--border--color: #007700;
@@ -7,7 +7,7 @@
 }
 
 .warning {
-  --notify--text--color: #FFFFFF;
+  --notify--text--color: #ffffff;
   --notify--bg--color: #ee5f00;
   --notify--bg--color--hover: #ac4500;
   --notify--border--color: #ac4500;
@@ -15,7 +15,7 @@
 }
 
 .error {
-  --notify--text--color: #FFFFFF;
+  --notify--text--color: #ffffff;
   --notify--bg--color: #ac0000;
   --notify--bg--color--hover: #770000;
   --notify--border--color: #770000;
@@ -31,11 +31,17 @@
   word-break: break-word;
   padding: 1rem 3rem;
   font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 1.5rem;
-  border: .2rem solid var(--notify--border--color);
+  border: 0.2rem solid var(--notify--border--color);
   color: var(--notify--text--color);
   background-color: var(--notify--bg--color);
 }
@@ -46,20 +52,30 @@
 }
 
 .anim {
-  animation: showNotify 0.5s both;
+  -webkit-animation: showNotify 0.5s both;
+          animation: showNotify 0.5s both;
 }
 
 .closeButton {
   position: absolute;
   cursor: pointer;
-  top: .5rem;
-  right: .5rem;
+  top: 0.5rem;
+  right: 0.5rem;
   width: 2rem;
   height: 2rem;
 }
 
 .closeButtonIcon {
   fill: var(--notify--text--color);
+}
+
+@-webkit-keyframes showNotify {
+  from {
+    top: -100px;
+  }
+  to {
+    top: 50px;
+  }
 }
 
 @keyframes showNotify {

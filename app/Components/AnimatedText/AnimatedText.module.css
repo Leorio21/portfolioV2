@@ -6,27 +6,55 @@
 }
 
 .rotate {
-  animation: rotation 0.5s both linear;
+  -webkit-animation: rotation 0.5s both linear;
+          animation: rotation 0.5s both linear;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+  100% {
+    -webkit-transform: rotateX(90deg);
+            transform: rotateX(90deg);
+  }
 }
 
 @keyframes rotation {
   0% {
-    transform: rotateX(0deg);
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
   }
   100% {
-    transform: rotateX(90deg)
+    -webkit-transform: rotateX(90deg);
+            transform: rotateX(90deg);
   }
 }
 
 .rotateFR {
-  animation: rotationFR 0.5s both linear;
+  -webkit-animation: rotationFR 0.5s both linear;
+          animation: rotationFR 0.5s both linear;
+}
+
+@-webkit-keyframes rotationFR {
+  0% {
+    -webkit-transform: rotateX(90deg);
+            transform: rotateX(90deg);
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
 }
 
 @keyframes rotationFR {
   0% {
-    transform: rotateX(90deg);
+    -webkit-transform: rotateX(90deg);
+            transform: rotateX(90deg);
   }
   100% {
-    transform: rotateX(0deg)
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
   }
 }

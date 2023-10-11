@@ -1,23 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
 
-:root, .light {
+:root,
+.light {
   --bg--img--home: url("/fond_code_ligth.webp");
   --bg--img--contact: url("/fond_etoiles_light.webp");
 
   --text--color: rgb(36, 36, 36);
   --background--color: rgb(221, 221, 221);
   --secondary--background--color: rgb(197, 197, 197);
-  --border--radius: .8rem;
+  --border--radius: 0.8rem;
   --box-shadow--color: rgb(255, 145, 0);
   --scroll-margin--top: 31.5rem;
 
   --header--background--top: rgba(221, 221, 221, 1);
-  --header--background--bottom: rgba(221, 221, 221, .3);
+  --header--background--bottom: rgba(221, 221, 221, 0.3);
 
-  --box--tilt--color: rgba(255, 145, 0, .3);
+  --box--tilt--color: rgba(255, 145, 0, 0.3);
 
   --form--label--font: "Young Serif", "arial", "sans serif";
-  --contact--shadow--color: rgba(255, 145, 0, .3);
+  --contact--shadow--color: rgba(255, 145, 0, 0.3);
   --button--send--text--color: rgb(0, 0, 0);
   --button--send--background--color: rgb(255, 145, 0);
   --button--reset--text--color: rgb(255, 255, 255);
@@ -34,11 +35,11 @@
   --box-shadow--color: rgb(57, 135, 159);
 
   --header--background--top: rgba(36, 36, 36, 1);
-  --header--background--bottom: rgba(36, 36, 36, .3);
+  --header--background--bottom: rgba(36, 36, 36, 0.3);
 
-  --box--tilt--color: rgba(57, 135, 159, .3);
+  --box--tilt--color: rgba(57, 135, 159, 0.3);
 
-  --contact--shadow--color: rgba(57, 135, 159, .3);
+  --contact--shadow--color: rgba(57, 135, 159, 0.3);
   --button--send--text--color: rgb(0, 0, 0);
   --button--send--background--color: rgb(57, 135, 159);
   --button--reset--text--color: rgb(255, 255, 255);
@@ -56,11 +57,11 @@
     --box-shadow--color: rgb(57, 135, 159);
 
     --header--background--top: rgba(36, 36, 36, 1);
-    --header--background--bottom: rgba(36, 36, 36, .3);
-    
-    --box--tilt--color: rgba(57, 135, 159, .3);
+    --header--background--bottom: rgba(36, 36, 36, 0.3);
 
-    --contact--shadow--color: rgba(57, 135, 159, .3);
+    --box--tilt--color: rgba(57, 135, 159, 0.3);
+
+    --contact--shadow--color: rgba(57, 135, 159, 0.3);
     --button--send--text--color: rgb(0, 0, 0);
     --button--send--background--color: rgb(57, 135, 159);
     --button--reset--text--color: rgb(255, 255, 255);
@@ -69,7 +70,8 @@
 }
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border: unset;
   padding: 0;
   margin: 0;
@@ -87,8 +89,12 @@ a {
 html {
   font-size: 62.5%; /* 1 rem = 10px */
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   scroll-behavior: smooth;
 }
 
@@ -96,9 +102,16 @@ body {
   width: 100%;
   max-width: 1440px;
   overflow-x: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: var(--background--color);
 }
 
@@ -122,7 +135,8 @@ section {
 }
 
 @media (width >= 576px) {
-  .light, .dark {
+  .light,
+  .dark {
     --scroll-margin--top: 70px;
   }
 
