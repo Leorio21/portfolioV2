@@ -32,12 +32,12 @@ export default function ProjetCard({ projet, nmr }: ProjetCardProps) {
         </svg>
       </div>
       <figure className={styles.miniature}>
-        <Image
-          src={projet.miniature}
-          blurDataURL={projet.miniature}
+        <source media="(min-width: 576px)" srcSet={`${projet.miniature}_medium.webp`} />
+        <source media="(min-width: 992px)" srcSet={`${projet.miniature}_large.webp`} />
+        <img
+          className={styles.illustration}
+          src=""
           alt="Capture d'ecran du projet"
-          style={{ objectFit: "contain" }}
-          fill
           loading="lazy"
         />
       </figure>

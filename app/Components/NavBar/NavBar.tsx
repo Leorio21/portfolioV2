@@ -15,8 +15,8 @@ export default function NavBar(): JSX.Element {
         menuContainer.classList.add(styles.openMenu);
         burger.classList.add(styles.move);
       } else {
-        burger.classList.remove(styles.move);
         menuContainer.classList.remove(styles.openMenu);
+        burger.classList.remove(styles.move);
       }
       setIsMenuOpen((prev: boolean) => !prev);
     }

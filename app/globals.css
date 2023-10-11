@@ -76,6 +76,10 @@
   color: var(--text--color);
 }
 
+img {
+  overflow: unset;
+}
+
 a {
   text-decoration: none;
 }

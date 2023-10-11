@@ -6,7 +6,7 @@ export default function Projets() {
   const projets = [
     {
       title: "Portfolio - WIP",
-      miniature: "/carousel/Portfolio.webp",
+      miniature: "/carousel/Portfolio",
       description:
         "Ce portfolio\nPremier projet pour découvrir NextJS et gerer le premier affichage en dark/Ligth mode en fonction des préférences utilisateur\n\nTechologies utilisées:\n\n- NextJS - TypeScript -",
       code: "https://github.com/Leorio21/portfolio",
@@ -14,7 +14,7 @@ export default function Projets() {
     },
     {
       title: "Compteur",
-      miniature: "/carousel/Compteur.webp",
+      miniature: "/carousel/Compteur",
       description:
         "Compteur avec pales tournantes avec effet 3D\n\nTechologies utilisées:\n\n- HTML - CSS - JS -",
       code: "https://github.com/Leorio21/compteur",
@@ -22,7 +22,7 @@ export default function Projets() {
     },
     {
       title: "Cube 3D",
-      miniature: "/carousel/cube3D.webp",
+      miniature: "/carousel/cube3D",
       description:
         "Petit cube en 3D\n\nTechologies utilisées:\n\n- HTML - CSS - JS -",
       code: "https://github.com/Leorio21/cube3D",
@@ -30,7 +30,7 @@ export default function Projets() {
     },
     {
       title: "Groupomania",
-      miniature: "/carousel/Groupomania.webp",
+      miniature: "/carousel/Groupomania",
       description:
         "Dernier Projet de la formation OpenClassRoom: créer un reseau social d'entreprise. TS permet de typer les variables et d'éviter certaines erreurs lors du developpement. L'ORM Prisma pour la gestion de la BDD de manière sécurisée\n\nTechologies utilisées:\n\n- React(ViteJS) - NodeJS - TypeScript - Express - MySql - Prisma -",
       code: "https://github.com/Leorio21/Oc-P7-Groupomania",
@@ -38,7 +38,7 @@ export default function Projets() {
     },
     {
       title: "Booki",
-      miniature: "/carousel/Booki.webp",
+      miniature: "/carousel/Booki",
       description:
         "Projet de la formation OpenClassRoom: Transformez une maquette en site web avec HTML & CSS\n\nTechologies utilisées:\n\n- HTML - CSS -",
       code: "https://github.com/Leorio21/OC-P2-Booki",
@@ -46,7 +46,7 @@ export default function Projets() {
     },
     {
       title: "OhMyFood",
-      miniature: "/carousel/OhMyFood.webp",
+      miniature: "/carousel/OhMyFood",
       description:
         "Projet de la formation OpenClassRoom: Après avoir transformé la maquette en site HTML - CSS/SASS, dynamiser le site avec des animations CSS\n\nTechologies utilisées:\n\n- HTML - CSS - SASS -",
       code: "https://github.com/Leorio21/OC-P3-Ohmyfood",
