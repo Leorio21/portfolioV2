@@ -1,8 +1,8 @@
 .container {
   -webkit-perspective-origin: top;
-          perspective-origin: top;
+  perspective-origin: top;
   -webkit-perspective: 350px;
-          perspective: 350px;
+  perspective: 350px;
 }
 
 .container:hover {
@@ -11,9 +11,9 @@
 
 .container:hover .card {
   -webkit-transform: scale(1.5) rotateY(180deg);
-          transform: scale(1.5) rotateY(180deg);
+  transform: scale(1.5) rotateY(180deg);
   -webkit-box-shadow: 0 0 5rem var(--box-shadow--color);
-          box-shadow: 0 0 5rem var(--box-shadow--color);
+  box-shadow: 0 0 5rem var(--box-shadow--color);
 }
 
 .card {
@@ -21,23 +21,23 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 108px;
-  height: 120px;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 120px;
+  width: 108px;
+  border-radius: var(--border--radius);
+  -webkit-box-shadow: 0.5rem 0.5rem 0.7rem var(--box-shadow--color);
+  box-shadow: 0.5rem 0.5rem 0.7rem var(--box-shadow--color);
   -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  transform-style: preserve-3d;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   z-index: -1;
-  -webkit-box-shadow: .5rem .5rem .7rem var(--box-shadow--color);
-          box-shadow: .5rem .5rem .7rem var(--box-shadow--color);
-  border-radius: var(--border--radius);
 }
 
 .figure {
@@ -47,46 +47,45 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  border-radius: var(--border--radius);
   padding: 10px;
   background-color: white;
-  width: 100%;
-  height: 100%;
-  border-radius: var(--border--radius);
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
 .recto {
-  -webkit-filter: grayscale(1);
-          filter: grayscale(1);
   border-radius: var(--border--radius);
-  /* backface-visibility:hidden; */
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
 }
 
 .recto img {
   -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 .verso {
   border-radius: var(--border--radius);
   -webkit-transform: rotateY(180deg) translateZ(1px);
-          transform: rotateY(180deg) translateZ(1px);
+  transform: rotateY(180deg) translateZ(1px);
 }
 
 .returnArrow {
   position: absolute;
-  top: 5px;
   right: 5px;
+  top: 5px;
   fill: black;
   font-size: 1.5rem;
 }
@@ -96,11 +95,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
   border-radius: var(--border--radius);
   font-size: 1.5rem;

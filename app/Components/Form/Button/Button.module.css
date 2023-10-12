@@ -11,16 +11,16 @@
 .button {
   height: 5rem;
   width: 40%;
+  border-radius: var(--border--radius);
   background-color: var(--button--background--color);
   color: var(--button--text--color);
   font-size: 1.5rem;
-  border-radius: var(--border--radius);
   overflow-x: hidden;
   -o-text-overflow: ellipsis;
-     text-overflow: ellipsis;
+  text-overflow: ellipsis;
 }
 
 .button:hover {
   -webkit-box-shadow: 0 0 1.5rem var(--button--background--color);
-          box-shadow: 0 0 1.5rem var(--button--background--color);
+  box-shadow: 0 0 1.5rem var(--button--background--color);
 }

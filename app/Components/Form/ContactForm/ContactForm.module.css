@@ -10,34 +10,34 @@
 }
 
 .buttons {
-  grid-area: buttons;
-  padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
+  padding: 1rem;
+  grid-area: buttons;
 }
 
 @media (width >= 576px) {
   .formContainer {
-    width: 80%;
-    max-width: 800px;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 11rem 11rem 11rem 26rem 11rem;
     row-gap: 1rem;
     -webkit-column-gap: 1rem;
-       -moz-column-gap: 1rem;
-            column-gap: 1rem;
+    -moz-column-gap: 1rem;
+    column-gap: 1rem;
     grid-template-areas:
-      "lastName firstName"
-      "email tel"
-      "subject subject"
-      "message message"
-      "buttons buttons";
+    "lastName firstName"
+    "email tel"
+    "subject subject"
+    "message message"
+    "buttons buttons";
+    max-width: 800px;
+    width: 80%;
   }
 }

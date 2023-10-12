@@ -26,29 +26,29 @@
   position: fixed;
   top: -100px;
   left: calc(50% - 15.5rem);
-  width: 32rem;
-  z-index: 99;
-  word-break: break-word;
-  padding: 1rem 3rem;
-  font-size: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 1.5rem;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 32rem;
   border: 0.2rem solid var(--notify--border--color);
-  color: var(--notify--text--color);
+  border-radius: 1.5rem;
+  padding: 1rem 3rem;
   background-color: var(--notify--bg--color);
+  color: var(--notify--text--color);
+  font-size: 1.5rem;
+  word-break: break-word;
+  z-index: 99;
 }
 
 .container:hover {
-  border-color: var(--notify--border--color--hover);
   background-color: var(--notify--bg--color--hover);
+  border-color: var(--notify--border--color--hover);
 }
 
 .anim {
@@ -58,11 +58,11 @@
 
 .closeButton {
   position: absolute;
-  cursor: pointer;
   top: 0.5rem;
   right: 0.5rem;
-  width: 2rem;
   height: 2rem;
+  width: 2rem;
+  cursor: pointer;
 }
 
 .closeButtonIcon {

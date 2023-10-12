@@ -5,33 +5,33 @@
 
 .container {
   position: relative;
-  width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-image: var(--bg--img--contact);
+  -ms-flex-align: center;
+  align-items: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
   background-attachment: fixed;
+  background-image: var(--bg--img--contact);
 }
 
 .container::before {
-  content: "";
   position: absolute;
-  z-index: 0;
   top: 10%;
   left: 10%;
   -webkit-box-shadow: 0 0 20rem 8rem var(--contact--shadow--color);
-          box-shadow: 0 0 20rem 8rem var(--contact--shadow--color);
+  box-shadow: 0 0 20rem 8rem var(--contact--shadow--color);
+  content: "";
+  z-index: 0;
 }
