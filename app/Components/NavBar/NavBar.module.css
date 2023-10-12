@@ -45,7 +45,7 @@
 }
 
 .openMenu {
-  height: 31.5rem;
+  height: 37.5rem;
 }
 
 .move {
@@ -92,7 +92,7 @@
   line-height: 4rem;
 }
 
-@media (width >= 576px) {
+@media (width >= 768px) {
   .container {
     position: -webkit-sticky;
     position: sticky;
@@ -104,15 +104,15 @@
         -ms-flex-direction: row;
             flex-direction: row;
     background-color: unset;
+    background-image: -o-linear-gradient(
+      var(--header--background--top),
+      var(--header--background--bottom)
+    );
     background-image: -webkit-gradient(
       linear,
       left top, left bottom,
       from(var(--header--background--top)),
       to(var(--header--background--bottom))
-    );
-    background-image: -o-linear-gradient(
-      var(--header--background--top),
-      var(--header--background--bottom)
     );
     background-image: linear-gradient(
       var(--header--background--top),

@@ -10,7 +10,7 @@ export default function NavBar(): JSX.Element {
   const toggleMenu = () => {
     const burger = document.getElementById("menu");
     const menuContainer = document.getElementById("menu_container");
-    if (burger !== null && menuContainer !== null && window.innerWidth < 576) {
+    if (burger !== null && menuContainer !== null && window.innerWidth < 768) {
       if (!isMenuOpen) {
         menuContainer.classList.add(styles.openMenu);
         burger.classList.add(styles.move);
@@ -55,6 +55,14 @@ export default function NavBar(): JSX.Element {
             onClick={toggleMenu}
           >
             Contact
+          </a>
+          <a
+            href="/jerome_lefeuvre_developpeur_web.pdf"
+            className={styles.navBar__Item}
+            target="_blank"
+            onClick={toggleMenu}
+          >
+            Mon CV
           </a>
         </nav>
       </div>
