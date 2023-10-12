@@ -5,7 +5,7 @@ import ProjetCard from "./ProjetCard";
 export default function Projets() {
   const projets = [
     {
-      title: "Portfolio - WIP",
+      title: "Portfolio",
       miniature: "/carousel/Portfolio",
       description:
         "Ce portfolio\nPremier projet pour découvrir NextJS et gerer le premier affichage en dark/Ligth mode en fonction des préférences utilisateur\n\nTechologies utilisées:\n\n- NextJS - TypeScript -",
