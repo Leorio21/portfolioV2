@@ -31,16 +31,15 @@ export default function ProjetCard({ projet, nmr }: ProjetCardProps) {
           ></path>
         </svg>
       </div>
-      <figure className={styles.miniature}>
-        <source media="(min-width: 576px)" srcSet={`${projet.miniature}_medium.webp`} />
+      <picture className={styles.miniature}>
         <source media="(min-width: 992px)" srcSet={`${projet.miniature}_large.webp`} />
         <img
           className={styles.illustration}
-          src=""
+          src={`${projet.miniature}_medium.webp`}
           alt="Capture d'ecran du projet"
           loading="lazy"
         />
-      </figure>
+      </picture>
       <div className={styles["project-infos"]}>
         <h3 className={styles.title}>{projet.title}</h3>
         <p className={styles.description}>{projet.description}</p>
