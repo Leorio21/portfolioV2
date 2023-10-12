@@ -20,7 +20,6 @@ interface TextAreaProps {
     | Merge<FieldError, FieldErrorsImpl<any>>
     | undefined;
   inRegister: UseFormRegister<IFormValues>;
-  inRequired: boolean;
   inWatch: UseFormWatch<IFormValues>;
 }
 
@@ -30,7 +29,6 @@ export default function TextArea({
   inGridPosition,
   inError,
   inRegister,
-  inRequired,
   inWatch,
 }: TextAreaProps): JSX.Element {
   const LabelRef = useRef<HTMLParagraphElement>(null);

@@ -2,25 +2,25 @@ import React from "react";
 import styles from "./Button.module.css";
 
 interface ButtonProps {
-  type: "button" | "submit" | "reset";
-  value: string;
-  color?: "send" | "reset";
-  onClick?: () => void;
+  inType: "button" | "submit" | "reset";
+  inValue: string;
+  inColor?: "send" | "reset";
+  inOnClick?: () => void;
 }
 
 export default function ButtonForm({
-  type,
-  value,
-  color = "send",
-  onClick = () => {},
+  inType,
+  inValue,
+  inColor = "send",
+  inOnClick = () => {},
 }: ButtonProps): JSX.Element {
   return (
     <button
-      type={type}
-      className={`${styles.button} ${styles[color]}`}
-      onClick={onClick}
+      type={inType}
+      className={`${styles.button} ${styles[inColor]}`}
+      onClick={inOnClick}
     >
-      {value}
+      {inValue}
     </button>
   );
 }

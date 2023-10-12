@@ -21,7 +21,7 @@ function Competences() {
       </h2>
       <div className={styles.competencesContainer}>
         {competencesList.map((comp, key) => {
-          return <CompetenceCard name={comp} key={key} />;
+          return <CompetenceCard inName={comp} key={key} />;
         })}
       </div>
     </section>

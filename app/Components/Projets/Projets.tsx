@@ -51,7 +51,7 @@ export default function Projets() {
         "Projet de la formation OpenClassRoom: Après avoir transformé la maquette en site HTML - CSS/SASS, dynamiser le site avec des animations CSS\n\nTechologies utilisées:\n\n- HTML - CSS - SASS -",
       code: "https://github.com/Leorio21/OC-P3-Ohmyfood",
       site: "https://leorio21.github.io/OC-P3-Ohmyfood/index.html",
-    }
+    },
   ];
 
   return (
@@ -60,7 +60,7 @@ export default function Projets() {
         Projets
       </h2>
       {projets.map((projet, idx) => {
-        return <ProjetCard projet={projet} nmr={idx} key={idx} />;
+        return <ProjetCard inProjet={projet} inNmr={idx} key={idx} />;
       })}
     </section>
   );

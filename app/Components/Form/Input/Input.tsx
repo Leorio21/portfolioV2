@@ -21,7 +21,6 @@ interface InputProps {
     | Merge<FieldError, FieldErrorsImpl<any>>
     | undefined;
   inRegister: UseFormRegister<IFormValues>;
-  inRequired: boolean;
   inWatch: UseFormWatch<IFormValues>;
 }
 

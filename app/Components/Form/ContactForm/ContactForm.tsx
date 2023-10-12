@@ -111,7 +111,6 @@ export default function ContactForm(): JSX.Element {
           inLabel="Nom"
           inGridPosition="lastName"
           inError={errors.lastName?.message}
-          inRequired={true}
           inRegister={register}
           inWatch={watch}
         />
@@ -121,7 +120,6 @@ export default function ContactForm(): JSX.Element {
           inLabel={"Prénom"}
           inGridPosition={"firstName"}
           inError={errors.firstName?.message}
-          inRequired={true}
           inRegister={register}
           inWatch={watch}
         />
@@ -131,7 +129,6 @@ export default function ContactForm(): JSX.Element {
           inLabel={"Em@il"}
           inGridPosition={"email"}
           inError={errors.email?.message}
-          inRequired={true}
           inRegister={register}
           inWatch={watch}
         />
@@ -141,7 +138,6 @@ export default function ContactForm(): JSX.Element {
           inLabel={"Téléphone"}
           inGridPosition={"tel"}
           inError={errors.phone?.message}
-          inRequired={true}
           inRegister={register}
           inWatch={watch}
         />
@@ -151,7 +147,6 @@ export default function ContactForm(): JSX.Element {
           inLabel={"Objet"}
           inGridPosition={"subject"}
           inError={errors.subject?.message}
-          inRequired={true}
           inRegister={register}
           inWatch={watch}
         />
@@ -160,24 +155,23 @@ export default function ContactForm(): JSX.Element {
           inLabel={"Message"}
           inGridPosition={"message"}
           inError={errors.message?.message}
-          inRequired={true}
           inRegister={register}
           inWatch={watch}
         />
         <div className={style.buttons}>
           <Button
-            type="button"
-            value="Réinitialiser"
-            color="reset"
-            onClick={() => {
+            inType="button"
+            inValue="Réinitialiser"
+            inColor="reset"
+            inOnClick={() => {
               reset();
             }}
           />
           <Button
-            type="button"
-            value="Envoyer"
-            color="send"
-            onClick={handleSubmit(onFormSubmit)}
+            inType="button"
+            inValue="Envoyer"
+            inColor="send"
+            inOnClick={handleSubmit(onFormSubmit)}
           />
         </div>
       </form>

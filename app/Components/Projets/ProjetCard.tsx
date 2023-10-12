@@ -4,22 +4,22 @@ import { IntProjectData } from "@/app/Interfaces/Interfaces";
 import styles from "./ProjetCard.module.css";
 
 interface ProjetCardProps {
-  projet: IntProjectData;
-  nmr: number;
+  inProjet: IntProjectData;
+  inNmr: number;
 }
 
-export default function ProjetCard({ projet, nmr }: ProjetCardProps) {
+export default function ProjetCard({ inProjet, inNmr }: ProjetCardProps) {
   return (
     <article
       className={
-        nmr % 2 === 0
+        inNmr % 2 === 0
           ? styles.container
           : `${styles.container} ${styles.reverse}`
       }
     >
       <div className={styles.tilt}>
         <svg
-          className={nmr % 2 !== 0 ? `${styles["tilt-rotate"]}` : ""}
+          className={inNmr % 2 !== 0 ? `${styles["tilt-rotate"]}` : ""}
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1200 120"
@@ -32,30 +32,39 @@ export default function ProjetCard({ projet, nmr }: ProjetCardProps) {
         </svg>
       </div>
       <picture className={styles.miniature}>
-        <source media="(min-width: 992px)" srcSet={`${projet.miniature}_large.webp`} />
+        <source
+          media="(min-width: 992px)"
+          srcSet={`${inProjet.miniature}_large.webp`}
+        />
         <img
           className={styles.illustration}
-          src={`${projet.miniature}_medium.webp`}
+          src={`${inProjet.miniature}_medium.webp`}
           alt="Capture d'ecran du projet"
           loading="lazy"
         />
       </picture>
       <div className={styles["project-infos"]}>
-        <h3 className={styles.title}>{projet.title}</h3>
-        <p className={styles.description}>{projet.description}</p>
-        {projet.code !== "" && (
-          <p className={`${styles.code} ${styles.lien}`}>
-            <a href={projet.code} target="_blank" rel="noreferrer">
-              Voir le code
-            </a>
-          </p>
+        <h3 className={styles.title}>{inProjet.title}</h3>
+        <p className={styles.description}>{inProjet.description}</p>
+        {inProjet.code !== "" && (
+          <a
+            href={inProjet.code}
+            target="_blank"
+            rel="noreferrer"
+            className={`${styles.code} ${styles.lien}`}
+          >
+            Voir le code
+          </a>
         )}
-        {projet.site !== "" && (
-          <p className={`${styles.site} ${styles.lien}`}>
-            <a href={projet.site} target="_blank" rel="noreferrer">
-              Voir le site
-            </a>
-          </p>
+        {inProjet.site !== "" && (
+          <a
+            href={inProjet.site}
+            target="_blank"
+            rel="noreferrer"
+            className={`${styles.site} ${styles.lien}`}
+          >
+            Voir le site
+          </a>
         )}
       </div>
     </article>
