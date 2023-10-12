@@ -16,6 +16,7 @@
   --header--background--bottom: rgba(221, 221, 221, 0.3);
 
   --box--tilt--color: rgba(255, 145, 0, 0.3);
+  --project--card--shadow: rgb(0, 0, 0);
 
   --form--label--font: "Young Serif", "arial", "sans serif";
   --contact--shadow--color: rgba(255, 145, 0, 0.3);
@@ -38,6 +39,7 @@
   --header--background--bottom: rgba(36, 36, 36, 0.3);
 
   --box--tilt--color: rgba(57, 135, 159, 0.3);
+  --project--card--shadow: rgb(255, 255, 255);
 
   --contact--shadow--color: rgba(57, 135, 159, 0.3);
   --button--send--text--color: rgb(0, 0, 0);
@@ -60,6 +62,7 @@
     --header--background--bottom: rgba(36, 36, 36, 0.3);
 
     --box--tilt--color: rgba(57, 135, 159, 0.3);
+    --project--card--shadow: rgb(255, 255, 255);
 
     --contact--shadow--color: rgba(57, 135, 159, 0.3);
     --button--send--text--color: rgb(0, 0, 0);
