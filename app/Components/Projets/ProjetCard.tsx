@@ -34,13 +34,13 @@ export default function ProjetCard({ inProjet, inNmr }: ProjetCardProps) {
       <picture className={styles.miniature}>
         <source
           media="(min-width: 992px)"
-          srcSet={`${inProjet.miniature}_large.webp`}
+          srcSet={`/carousel/mini_${inProjet.miniature}_large.webp`}
           width={1440}
           height={1080}
         />
         <img
           className={styles.illustration}
-          src={`${inProjet.miniature}_medium.webp`}
+          src={`/carousel/mini_${inProjet.miniature}_medium.webp`}
           alt="Capture d'ecran du projet"
           loading="lazy"
           width={630}
