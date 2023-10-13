@@ -13,8 +13,8 @@
   --primary--color: 255, 145, 0;
   --secondary--color: 171, 97, 0;
   --text--color: rgb(36, 36, 36);
-  --background--color: rgb(221, 221, 221);
-  --background--secondary--color: rgb(197, 197, 197);
+  --background--color: 221, 221, 221;
+  --background--secondary--color: 197, 197, 197;
 
   --button--send--text--color: rgb(0, 0, 0);
   --button--send--background--color: rgb(var(--primary--color));
@@ -29,8 +29,8 @@
   --primary--color: 57, 135, 159;
   --secondary--color: 26, 63, 75;
   --text--color: rgb(221, 221, 221);
-  --background--color: rgb(36, 36, 36);
-  --background--secondary--color: rgb(65, 65, 65);
+  --background--color: 36, 36, 36;
+  --background--secondary--color: 65, 65, 65;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -41,8 +41,8 @@
     --primary--color: 57, 135, 159;
     --secondary--color: 26, 63, 75;
     --text--color: rgb(221, 221, 221);
-    --background--color: rgb(36, 36, 36);
-    --background--secondary--color: rgb(65, 65, 65);
+    --background--color: 36, 36, 36;
+    --background--secondary--color: 65, 65, 65;
   }
 }
 
@@ -84,7 +84,7 @@ body {
   align-items: center;
   width: 100%;
   max-width: 1440px;
-  background-color: var(--background--color);
+  background-color: rgb(var(--background--color));
   overflow-x: hidden;
 }
 

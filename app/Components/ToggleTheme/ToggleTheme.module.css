@@ -15,7 +15,7 @@
   border-radius: 2.5rem;
   padding: 0 1rem;
   background-color: var(--text--color);
-  color: var(--background--color);
+  color: rgb(var(--background--color));
   font-size: 2rem;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -28,7 +28,7 @@
   left: 0.8rem;
   height: 2.5rem;
   width: 2.5rem;
-  border: 0.2rem solid var(--background--color);
+  border: 0.2rem solid rgb(var(--background--color));
   border-radius: 2.5rem;
   background-color: var(--text--color);
   -webkit-transition: all 0.3s ease-in-out;
@@ -43,7 +43,7 @@
 .themeIcon {
   height: auto;
   width: 1.7rem;
-  fill: var(--background--color);
+  fill: rgb(var(--background--color));
 }
 
 @media (width >= 576px) {

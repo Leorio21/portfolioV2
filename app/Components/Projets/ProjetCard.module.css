@@ -109,9 +109,9 @@
 }
 
 .lien:hover {
-  border-color: var(--background--color);
+  border-color: rgb(var(--background--color));
   background-color: var(--text--color);
-  color: var(--background--color);
+  color: rgb(var(--background--color));
 }
 
 .code {
