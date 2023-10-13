@@ -12,8 +12,8 @@
 .container:hover .card {
   -webkit-transform: scale(1.5) rotateY(180deg);
   transform: scale(1.5) rotateY(180deg);
-  -webkit-box-shadow: 0 0 5rem var(--box-shadow--color);
-  box-shadow: 0 0 5rem var(--box-shadow--color);
+  -webkit-box-shadow: 0 0 5rem rgb(var(--primary--color));
+  box-shadow: 0 0 5rem rgb(var(--primary--color));
 }
 
 .card {
@@ -30,8 +30,8 @@
   height: 120px;
   width: 108px;
   border-radius: var(--border--radius);
-  -webkit-box-shadow: 0.5rem 0.5rem 0.7rem var(--box-shadow--color);
-  box-shadow: 0.5rem 0.5rem 0.7rem var(--box-shadow--color);
+  -webkit-box-shadow: 0.5rem 0.5rem 0.7rem rgb(var(--primary--color));
+  box-shadow: 0.5rem 0.5rem 0.7rem rgb(var(--primary--color));
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   -webkit-transition: all 0.3s ease-in-out;

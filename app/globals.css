@@ -10,42 +10,27 @@
   --bg--img--home: url("/fond_code_ligth.webp");
   --bg--img--contact: url("/fond_etoiles_light.webp");
 
+  --primary--color: 255, 145, 0;
+  --secondary--color: 171, 97, 0;
   --text--color: rgb(36, 36, 36);
   --background--color: rgb(221, 221, 221);
-  --secondary--background--color: rgb(197, 197, 197);
-  --box-shadow--color: rgb(255, 145, 0);
+  --background--secondary--color: rgb(197, 197, 197);
 
-  --header--background--top: rgba(221, 221, 221, 1);
-  --header--background--bottom: rgba(221, 221, 221, 0.3);
-
-  --box--tilt--color: rgba(255, 145, 0, 0.3);
-
-  --contact--shadow--color: rgba(255, 145, 0, 0.3);
   --button--send--text--color: rgb(0, 0, 0);
-  --button--send--background--color: rgb(255, 145, 0);
+  --button--send--background--color: rgb(var(--primary--color));
   --button--reset--text--color: rgb(255, 255, 255);
-  --button--reset--background--color: rgb(171, 97, 0);
+  --button--reset--background--color: rgb(var(--secondary--color));
 }
 
 .dark {
   --bg--img--home: url("/fond_code_dark.webp");
   --bg--img--contact: url("/fond_etoiles_dark.webp");
 
+  --primary--color: 57, 135, 159;
+  --secondary--color: 26, 63, 75;
   --text--color: rgb(221, 221, 221);
   --background--color: rgb(36, 36, 36);
-  --secondary--background--color: rgb(65, 65, 65);
-  --box-shadow--color: rgb(57, 135, 159);
-
-  --header--background--top: rgba(36, 36, 36, 1);
-  --header--background--bottom: rgba(36, 36, 36, 0.3);
-
-  --box--tilt--color: rgba(57, 135, 159, 0.3);
-
-  --contact--shadow--color: rgba(57, 135, 159, 0.3);
-  --button--send--text--color: rgb(0, 0, 0);
-  --button--send--background--color: rgb(57, 135, 159);
-  --button--reset--text--color: rgb(255, 255, 255);
-  --button--reset--background--color: rgb(26, 63, 75);
+  --background--secondary--color: rgb(65, 65, 65);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -53,21 +38,11 @@
     --bg--img--home: url("/fond_code_dark.webp");
     --bg--img--contact: url("/fond_etoiles_dark.webp");
 
+    --primary--color: 57, 135, 159;
+    --secondary--color: 26, 63, 75;
     --text--color: rgb(221, 221, 221);
     --background--color: rgb(36, 36, 36);
-    --secondary--background--color: rgb(65, 65, 65);
-    --box-shadow--color: rgb(57, 135, 159);
-
-    --header--background--top: rgba(36, 36, 36, 1);
-    --header--background--bottom: rgba(36, 36, 36, 0.3);
-
-    --box--tilt--color: rgba(57, 135, 159, 0.3);
-
-    --contact--shadow--color: rgba(57, 135, 159, 0.3);
-    --button--send--text--color: rgb(0, 0, 0);
-    --button--send--background--color: rgb(57, 135, 159);
-    --button--reset--text--color: rgb(255, 255, 255);
-    --button--reset--background--color: rgb(26, 63, 75);
+    --background--secondary--color: rgb(65, 65, 65);
   }
 }
 
@@ -89,8 +64,8 @@ html {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 100%;
   font-size: 62.5%; /* 1 rem = 10px */
   scroll-behavior: smooth;
@@ -102,11 +77,11 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
   max-width: 1440px;
   background-color: var(--background--color);
@@ -136,14 +111,6 @@ section {
   .light,
   .dark {
     --scroll-margin--top: 70px;
-  }
-
-  .light {
-    --contact--shadow--color: rgb(255, 145, 0);
-  }
-
-  .dark {
-    --contact--shadow--color: rgb(57, 135, 159);
   }
 }
 

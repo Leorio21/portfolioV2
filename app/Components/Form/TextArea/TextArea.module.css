@@ -19,7 +19,7 @@
   width: 100%;
   border-radius: var(--border--radius);
   padding: 0.3rem 1rem;
-  background-color: var(--secondary--background--color);
+  background-color: var(--background--secondary--color);
   color: var(--text--color);
   font-size: 1.5rem;
   resize: none;

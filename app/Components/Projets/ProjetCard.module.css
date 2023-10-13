@@ -16,7 +16,7 @@
   -webkit-box-shadow: 0 0 1rem var(--project--card--shadow);
   box-shadow: 0 0 1rem var(--project--card--shadow);
   padding: 10px;
-  background-color: var(--secondary--background--color);
+  background-color: var(--background--secondary--color);
   font-family: var(--font--inter), Courier, monospace;
   font-size: 1.5rem;
 }
@@ -148,7 +148,7 @@
 }
 
 .shape-fill {
-  fill: var(--box--tilt--color);
+  fill: rgba(var(--primary--color), 0.3);
 }
 
 @media (width >= 576px) {
