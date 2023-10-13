@@ -19,7 +19,7 @@ export default function ProjetCard({ inProjet, inNmr }: ProjetCardProps) {
     >
       <div className={styles.tilt}>
         <svg
-          className={inNmr % 2 !== 0 ? `${styles["tilt-rotate"]}` : ""}
+          className={inNmr % 2 !== 0 ? styles["tilt-rotate"] : ""}
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1200 120"
@@ -35,16 +35,16 @@ export default function ProjetCard({ inProjet, inNmr }: ProjetCardProps) {
         <source
           media="(min-width: 992px)"
           srcSet={`/carousel/mini_${inProjet.miniature}_large.webp`}
-          width={1440}
-          height={1080}
+          width={373}
+          height={280}
         />
         <img
           className={styles.illustration}
           src={`/carousel/mini_${inProjet.miniature}_medium.webp`}
           alt="Capture d'ecran du projet"
           loading="lazy"
-          width={630}
-          height={1080}
+          width={163}
+          height={280}
         />
       </picture>
       <div className={styles["project-infos"]}>
