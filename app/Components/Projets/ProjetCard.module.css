@@ -16,7 +16,7 @@
   -webkit-box-shadow: 0 0 1rem var(--project--card--shadow);
   box-shadow: 0 0 1rem var(--project--card--shadow);
   padding: 10px;
-  background-color: var(--background--secondary--color);
+  background-color: rgb(var(--background--secondary--color));
   font-family: var(--font--inter), Courier, monospace;
   font-size: 1.5rem;
 }
