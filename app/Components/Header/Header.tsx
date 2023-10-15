@@ -6,10 +6,14 @@ export default function Header() {
   return (
     <header className={styles.container}>
       <h1>
-        Jérôme Lefeuvre
+        <AnimatedText inTextStart={"{name}"} inTextEnd="Jérôme Lefeuvre" />
       </h1>
       <h2>
-        Développeur Web
+        <AnimatedText
+          inTextStart={"{profession}"}
+          inTextEnd="Développeur Web"
+          inStartDelay={500}
+        />
       </h2>
     </header>
   );
