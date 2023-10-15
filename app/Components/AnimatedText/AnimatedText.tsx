@@ -51,7 +51,7 @@ export default function AnimatedText({inTextStart, inTextEnd, inStartDelay = 0}:
 
 	return (
 		<>
-			<h2 className={css["h-60"]} ref={textRef}>{text}</h2>
+			<span className={css["h-60"]} ref={textRef}>{text}</span>
 		</>
 	)
 }

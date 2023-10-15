@@ -8,15 +8,15 @@ export default function NavBar(): JSX.Element {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    const burger = document.getElementById("menu");
+    const menu = document.getElementById("menu");
     const menuContainer = document.getElementById("menu_container");
-    if (burger !== null && menuContainer !== null && window.innerWidth < 768) {
+    if (menu !== null && menuContainer !== null && window.innerWidth < 768) {
       if (!isMenuOpen) {
         menuContainer.classList.add(styles.openMenu);
-        burger.classList.add(styles.move);
+        menu.classList.add(styles.move);
       } else {
         menuContainer.classList.remove(styles.openMenu);
-        burger.classList.remove(styles.move);
+        menu.classList.remove(styles.move);
       }
       setIsMenuOpen((prev: boolean) => !prev);
     }
@@ -61,6 +61,7 @@ export default function NavBar(): JSX.Element {
             className={styles.navBar__Item}
             target="_blank"
             onClick={toggleMenu}
+            aria-label="Télécharger le cv"
           >
             Mon CV
           </a>

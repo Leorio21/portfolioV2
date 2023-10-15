@@ -13,7 +13,7 @@
   align-items: center;
   height: 0;
   width: 100%;
-  background-color: var(--background--color);
+  background-color: rgb(var(--background--color));
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -34,14 +34,10 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  height: fit-content;
   width: 100%;
+  visibility: hidden;
   padding: 2rem;
-  -webkit-transform: translateY(-100%);
-  -ms-transform: translateY(-100%);
-  transform: translateY(-100%);
-  -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
 }
 
 .openMenu {
@@ -49,9 +45,8 @@
 }
 
 .move {
-  -webkit-transform: translateY(0);
-  -ms-transform: translateY(0);
-  transform: translateY(0);
+  transition: visibility .3s ease-in-out .2s;
+  visibility: visible;
 }
 
 .burger {
@@ -104,17 +99,16 @@
     height: -moz-fit-content;
     height: fit-content;
     background-color: unset;
-    /* background-image: -o-linear-gradient(
+    background-image: -webkit-gradient(
+      linear,
+      left top, left bottom,
+      from(rgba(var(--background--color), 1)),
+      to(rgba(var(--background--color), .3))
+    );
+    background-image: -o-linear-gradient(
       rgba(var(--background--color), 1),
       rgba(var(--background--color), .3)
     );
-    background-image: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(var(--background--color), 1)),
-      to(rgba(var(--background--color), .3))
-    ); */
     background-image: linear-gradient(
       rgba(var(--background--color), 1),
       rgba(var(--background--color), .3)
@@ -134,9 +128,7 @@
     -ms-flex-pack: justify;
     justify-content: space-between;
     background-color: unset;
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
+    visibility: visible;
   }
 
   .burger,
