@@ -27,7 +27,7 @@ export default function NavBar(): JSX.Element {
       <RxHamburgerMenu
         className={`${styles.burger} ${styles.icone}`}
         onClick={toggleMenu}
-        aria-label="ouvrir ou fermer menu"
+        aria-description="ouvrir ou fermer menu"
       />
       <div className={styles.menu} id="menu">
         <ToggleTheme toogleMenu={toggleMenu} />
@@ -61,7 +61,8 @@ export default function NavBar(): JSX.Element {
             className={styles.navBar__Item}
             target="_blank"
             onClick={toggleMenu}
-            aria-label="Télécharger le cv"
+            aria-label="Mon CV"
+            aria-description="Télécharger le cv"
           >
             Mon CV
           </a>
