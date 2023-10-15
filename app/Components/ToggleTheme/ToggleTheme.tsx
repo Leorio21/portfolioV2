@@ -54,7 +54,7 @@ function ToggleTheme({ toogleMenu }: ToggleThemeProps) {
     <div className={styles.container} onClick={changeTheme}>
       <BsFillMoonStarsFill className={styles.themeIcon} />
       <BsFillSunFill className={styles.themeIcon} />
-      <div className={styles.button} ref={buttonTheme} aria-label="Changer thème dark/light"></div>
+      <div className={styles.button} ref={buttonTheme} aria-description="Changer thème dark/light"></div>
     </div>
   );
 }
