@@ -13,20 +13,12 @@ export default function Projets() {
       site: "https://portfolio-leorio21.vercel.app/",
     },
     {
-      title: "Compteur",
-      miniature: "Compteur",
+      title: "Le jeu du pendu",
+      miniature: "jeuPendu",
       description:
-        "Compteur avec pales tournantes avec effet 3D\n\nTechologies utilisées:\n\n- HTML - CSS - JS -",
-      code: "https://github.com/Leorio21/compteur",
-      site: "https://compteur.vercel.app/",
-    },
-    {
-      title: "Cube 3D",
-      miniature: "cube3D",
-      description:
-        "Petit cube en 3D\n\nTechologies utilisées:\n\n- HTML - CSS - JS -",
-      code: "https://github.com/Leorio21/cube3D",
-      site: "https://cube3-d.vercel.app/",
+        "Jeu du pendu (Challenge frontEnd-Mentor)\n\nTechologies utilisées:\n\n- NextJS - TypeScript -",
+      code: "https://github.com/Leorio21/leJeuDuPendu",
+      site: "https://le-jeu-du-pendu.vercel.app/",
     },
     {
       title: "Groupomania",
