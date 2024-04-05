@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import { IntProjectData } from "@/app/Interfaces/Interfaces";
 import styles from "./ProjetCard.module.css";
 

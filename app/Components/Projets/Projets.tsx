@@ -5,18 +5,18 @@ import ProjetCard from "./ProjetCard";
 export default function Projets() {
   const projets = [
     {
-      title: "Portfolio",
-      miniature: "Portfolio",
+      title: "Kanban - WIP",
+      miniature: "Kanban",
       description:
-        "Ce portfolio\nPremier projet pour découvrir NextJS et gerer le premier affichage en dark/Ligth mode en fonction des préférences utilisateur\n\nTechologies utilisées:\n\n- NextJS - TypeScript -",
-      code: "https://github.com/Leorio21/portfolio",
-      site: "https://portfolio-leorio21.vercel.app/",
+        "Challenge frontEnd Mentor\nCréer une application de gestion de tâches entièrement fonctionnelle avec une bascule entre mode clair/sombre. Données actuellement fourni par un fichier JSON.\n\nTechologies utilisées:\n\n- NextJS - TypeScript - Zustand -",
+      code: "https://github.com/Leorio21/kanban",
+      site: "https://kanban-leorio21.vercel.app/",
     },
     {
       title: "Le jeu du pendu",
       miniature: "jeuPendu",
       description:
-        "Jeu du pendu (Challenge frontEnd-Mentor)\n\nTechologies utilisées:\n\n- NextJS - TypeScript -",
+        "Challenge frontEnd Mentor\n\nTechologies utilisées:\n\n- NextJS - TypeScript - Zustand -",
       code: "https://github.com/Leorio21/leJeuDuPendu",
       site: "https://le-jeu-du-pendu.vercel.app/",
     },
@@ -24,7 +24,7 @@ export default function Projets() {
       title: "Groupomania",
       miniature: "Groupomania",
       description:
-        "Dernier Projet de la formation OpenClassRoom: créer un reseau social d'entreprise. TS permet de typer les variables et d'éviter certaines erreurs lors du developpement. L'ORM Prisma pour la gestion de la BDD de manière sécurisée\n\nTechologies utilisées:\n\n- React(ViteJS) - NodeJS - TypeScript - Express - MySql - Prisma -",
+        "Dernier Projet de la formation OpenClassRoom: créer un reseau social d'entreprise. TS permet de typer les variables et d'éviter des erreurs lors du developpement. L'ORM Prisma pour la gestion de la BDD de manière sécurisée\n\nTechologies utilisées:\n\n- React(ViteJS) - NodeJS - TypeScript - Express - MySql - Prisma -",
       code: "https://github.com/Leorio21/Oc-P7-Groupomania",
       site: "",
     },
