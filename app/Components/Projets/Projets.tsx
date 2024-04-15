@@ -10,7 +10,7 @@ export default function Projets() {
       description:
         "Challenge frontEnd Mentor\nCréer une application de gestion de tâches entièrement fonctionnelle avec une bascule entre mode clair/sombre. Données actuellement fourni par un fichier JSON.\n\nTechologies utilisées:\n\n- NextJS - TypeScript - Zustand -",
       code: "https://github.com/Leorio21/kanban",
-      site: "https://kanban-leorio21.vercel.app/",
+      site: "https://kanban-three-bice.vercel.app/",
     },
     {
       title: "Le jeu du pendu",
